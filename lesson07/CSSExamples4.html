@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSExamples (резиновая верстка)</title>
+    <style>
+        div {
+            border-style: dotted;
+        }
+
+        #div1 {
+            width: 200px;
+            background-image: url(./images/middle.png);
+            background-repeat: repeat-y;
+        }
+
+        #div2 {
+            background-image: url(./images/top.png);
+            background-repeat: no-repeat;
+        }
+
+        #div3 {
+            background-image: url(./images/bottom.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+
+        #divText {
+            padding-left: 64px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <div id="div3">
+                <div id="divText">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, atque voluptatum. Possimus velit et impedit, reiciendis cupiditate ex, doloremque a, totam dignissimos similique quidem enim odit quos illum iure fuga.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

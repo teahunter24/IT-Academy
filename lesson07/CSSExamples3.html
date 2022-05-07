@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSExamples (стили вместе с html)</title>
+    <style>
+        div {
+            border-style: dotted;
+            color: red;
+            
+        }
+
+        .box {
+            height: 150px;
+            width: 150px;
+        }
+
+        .boxSmall {
+            height: 50px;
+            width: 50px;
+        }
+
+        .image{
+            background-image: url(./images/flower.jpg);
+        }
+
+        #color1 {
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+        }
+
+
+        #image2 {
+            background-repeat: repeat-x;
+        }
+
+        #image3 {
+            background-repeat: repeat-y;
+        }
+
+        #image4 {
+            background-repeat: no-repeat;
+        }
+
+        #image5 {
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+        #image6 {
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+        }
+
+        #image7 {
+            background-repeat: no-repeat;
+            background-position: 25% 25%;
+        }
+
+        #image8 {
+            background-repeat: no-repeat;
+        }
+
+        #image9 {
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div id="color1" class="image">background-color</div>
+
+    <div id="image1" class="box image">background-repeat</div>
+    <div id="image2" class="box image">background-repeat: repeat x</div>
+    <div id="image3" class="box image">background-repeat: repeat y</div>
+    <div id="image4" class="box image">background-repeat: no-repeat</div>
+    <div id="image5" class="box image">background-repeat: right bottom</div>
+    <div id="image6" class="box image">background-repeat: 50% 50%</div>
+    <div id="image7" class="box image">background-repeat: 25% 25%</div>
+
+    <div id="image8" class="boxSmall image"></div>
+
+    <div id="image9" class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate minima soluta animi placeat. Deserunt corrupti aperiam, laudantium dicta soluta officia, accusantium at tempora, labore animi magnam? Ipsam atque quae dolores.
+    </div>
+</body>
+</html>

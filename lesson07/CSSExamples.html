@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSExamples (стили вместе с html)</title>
+    <style>
+        /* применение стиля ко всем <div> html-тэгам  */
+        div {
+            text-decoration: underline;
+        }
+
+        span {
+            text-transform:uppercase ;
+        }
+
+        /* применение стиля к html-тэгу с этим id  */
+        #paragraphId {
+            text-transform: uppercase;
+        }
+
+        /* применение стиля к html-тэгу с этим class */
+        .paragraphClass {
+            font-size: 20px;
+        }
+
+        /* применить правило ко всем html-тэгам */
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        p {
+            margin: 15px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Применяем стили аттрибутом style
+    </p>
+    <br>
+    <br>
+
+    <div>
+        div-1 <br>
+        Применяем стили <span>с помощью</span> html-тэга style
+    </div>
+    <br>
+    <br>
+
+    <div>
+        div-2 <br>
+        Применяем стили с помощью html-тэга style
+    </div>
+    <br>
+    <br>
+
+    <p id="paragraphId">
+        Применяем стили через id (селектором по id)
+    </p>
+    <br>
+    <br>
+
+    <p class="paragraphClass">
+        1. Применяем стили через class
+    </p>
+    <br>
+    <p class="paragraphClass">
+        2. Применяем стили через class
+    </p>
+    <br>
+    <p class="paragraphClass">
+        3. Применяем стили через class
+    </p>
+    <br>
+    <br>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* применение стиля ко всем <div> html-тэгам  */
+div {
+    text-decoration: line-through;
+}
+
+span {
+    text-transform:uppercase ;
+}
+
+/* применение стиля к html-тэгу с этим id  */
+#paragraphId {
+    text-transform: uppercase;
+}
+
+/* применение стиля к html-тэгу с этим class */
+.paragraphClass {
+    font-size: 20px;
+}
+
+/* применить правило ко всем html-тэгам */
+* {
+    padding: 0;
+    margin: 0;
+}
+p {
+    margin: 15px;
+    padding-left: 10px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSSExamples (вырезаем часть изображения)</title>
+    <style>
+        span {
+            border-style: dotted;
+            display: inline-block;
+        }
+
+        #smile1 {
+            height: 25px;
+            width: 25px;
+            background-image: url(./images/smileys.png);
+            background-position: 50px 75px;
+        }
+
+        #smile2 {
+            height: 25px;
+            width: 25px;
+            background-image: url(./images/smileys.png);
+            background-position: 75px 75px;
+        }
+
+        #smile3 {
+            height: 25px;
+            width: 25px;
+            background-image: url(./images/smileys.png);
+            background-position: 25px 50px;
+        }
+    </style>
+</head>
+<body>
+    Текст 1<span id="smile1"></span> Текст 2<span id="smile2"></span> Текст 3<span id="smile3"></span>
+    
+</body>
+</html>
