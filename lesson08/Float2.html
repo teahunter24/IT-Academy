@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .left{
+            background-color: aquamarine;
+            float: left;
+            width: 25%;
+            /* height: 200px;  */
+        }
+
+        .right{
+            background-color: gray;
+            float: right;
+            width: 75%;
+            /* height: 200px;  */
+        }
+
+        .first {
+            background-color: aquamarine;
+            float: left;
+            width: 25%;
+            /* height: 200px;  */
+        }
+
+        /* first + second - варианты
+        left-left - порядок важен
+        left-right - порядок не важен
+        right-right - порядок важен (справа будет эл-т, который шел первый)
+        right-left - порядок не важен*/
+
+        .second {
+            background-color: gray;
+            float: left;
+            width: 75%;
+            /* height: 200px;  */
+        }
+
+        .leftCell {
+            background-color: aquamarine;
+            width: 25%;
+        }
+
+        .rightCell {
+            background-color: gray;
+            width: 75%;
+        }
+        .clearFix {
+            /* left - игнорировать float-блоки слева */
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left</div>
+
+    <div class="right">Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right </div>
+
+    <div class="clearFix"></div>
+
+    <br>
+    <br>
+
+
+    <table style="width: 100%; border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <td class="rightCell">Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right </td>
+                <td class="leftCell">Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left</td>
+                
+            </tr>
+        </tbody>
+    </table>
+    
+    
+        
+    <br>
+    <br>
+
+    <div class="first">Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left Left </div>
+
+    <div class="second">Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right Right </div>
+
+    <div class="clearFix"></div>
+
+</body>
+</html>

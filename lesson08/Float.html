@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            text-align: justify;
+        }
+
+        .box {
+            border-style: dotted;
+            width: 15px;
+            height: 15px;
+        }
+
+        .boxBig {
+            border-style: dotted;
+            width: 50px;
+            height: 50px; 
+        }
+
+        .boxSmall {
+            border-style: dotted;
+            width: 5px;
+            height: 5px; 
+        }
+
+        .floatLeftBlock {
+            float: left;
+        }
+
+        .floatRightBlock {
+            float: right;
+        }
+
+        .clearFix {
+            /* left - игнорировать float-блоки слева */
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+    <br>
+    <br>
+
+    <table style="margin: auto; width: 100%;">
+        <tr>
+            <td style="width: 100px;">1</td>
+            <td style="width: auto;">2</td>
+            <td style="width: 150px;">3</td>
+        </tr>
+    </table>
+    
+    <br>
+    <br>
+    
+    <div>
+        <div class="box floatLeftBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde quisquam, officiis, molestias culpa tempora facilis magnam accusantium ipsa animi officia ipsum. Expedita iste reiciendis atque maxime facilis possimus deserunt!</p>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div>
+        <div class="box floatLeftBlock"></div>
+        <div class="boxBig floatLeftBlock"></div>
+        <div class="boxSmall floatLeftBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde quisquam, officiis, molestias culpa tempora facilis magnam accusantium ipsa animi officia ipsum. Expedita iste reiciendis atque maxime facilis possimus deserunt!</p>
+    </div>
+
+    
+    <br>
+    <br>
+    
+    <div>
+        <div class="box floatRightBlock"></div>
+        <div class="boxBig floatRightBlock"></div>
+        <div class="boxSmall floatRightBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde quisquam, officiis, molestias culpa tempora facilis magnam accusantium ipsa animi officia ipsum. Expedita iste reiciendis atque maxime facilis possimus deserunt!</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <div class="box floatRightBlock"></div>
+        <div class="box floatLeftBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde quisquam, officiis, molestias culpa tempora facilis magnam accusantium ipsa animi officia ipsum. Expedita iste reiciendis atque maxime facilis possimus deserunt!</p>
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <div class="boxBig floatLeftBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <div class="clearFix"></div>
+        <h4 style="margin: 15px;">(какой-то текст)</h4>
+        <!-- <div class="clearFix"></div> -->
+        <div class="boxBig floatLeftBlock"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos unde quisquam, officiis, molestias culpa tempora facilis magnam accusantium ipsa animi officia ipsum. Expedita iste reiciendis atque maxime facilis possimus deserunt!</p>
+        <div class="clearFix"></div>
+    </div>
+
+    <br>
+    <br>
+
+</body>
+</html>

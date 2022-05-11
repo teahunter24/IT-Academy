@@ -1,0 +1,172 @@
+.clearFix {
+    padding: 20px;
+    clear:both;
+}
+
+.leftColor {
+    background-color: aquamarine;
+}
+
+.rightColor {
+    background-color: gray;
+}
+
+#left1 {
+    width: auto;
+    margin-right: 25%;
+    /* height: 200px;  */
+}
+
+#right1 {
+    float: right;
+    width: 25%;
+    /* height: 200px;  */
+}
+
+#left2 {
+    width: auto;
+    margin-right: 200px;
+}
+
+#right2 {
+    float: right;
+    width: 200px;
+}
+
+#left3 {
+    float: left;
+    margin-left: 25%;
+}
+
+#right3 {
+    margin-left: 25%;
+}
+
+#left4 {
+    float: left;
+    width: 200px;
+}
+
+#right4 {
+    margin-left: 200px;
+}
+
+#left5 {
+    float: left;
+    width: 25%;
+}
+
+#right5 {
+    margin-left: 25%;
+}
+
+#col1 {
+    width: 15%;
+    float: left;
+    background-color: blue;
+}
+#col2 {
+    width: 25%;
+    float: left;
+    background-color: blueviolet;
+}
+#col3 {
+    /* 40/60 -> 66.7% */
+    width: 66.7%;
+    float: left;
+    background-color:darkgoldenrod;
+}
+#col4 {
+    /* 20/60 -> 33.3% */
+    width: 33.3%;
+    float: left;
+    background-color: crimson;
+}
+
+
+#colsWrapper {
+    float: right;
+    width: 60%;
+}
+
+#wrapper2 {
+    /* float: left; */
+    margin-left: 25%;
+}
+
+.midColor {
+    background-color: darkgreen;
+}
+
+#left6 {
+    float: left;
+    width: 25%;
+}
+
+#mid6 {
+    float: left;
+    width: 200px;
+}
+
+#right6 {
+    margin-left: 200px;
+}
+
+
+
+#left7 {
+    float: left;
+    width: 200px;
+}
+
+#mid7 {
+    float: left;
+    width: 25%;
+}
+
+#right7 {
+    margin-left: 200px;
+    /* padding-left: 25%; */
+    overflow: hidden;
+}
+
+#col1-from5 {
+    width: 100px;
+    float: left;
+    background-color: aqua;
+}
+#col2-from5 {
+    width: 10%;
+    float: left;
+    background-color:red;
+}
+
+#col3-from5 {
+    /* float: left; */
+    overflow: hidden;
+    background-color: blue;
+}
+
+#col4-from5 {
+    width: 150px;
+    float: right;
+    background-color: brown;
+}
+
+#col5-from5 {
+    width: 15%;
+    float: right;
+    background-color: yellow;
+}
+
+#left8 {
+    float: left;
+    width: 25%;
+    min-width: 200px;
+    /* max-width: 300px; */
+}
+
+#right8 {
+    margin-left: 25%;
+    overflow: hidden;
+}
