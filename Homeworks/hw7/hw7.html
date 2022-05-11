@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV_FRAME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Water+Brush&display=swap" rel="stylesheet">
+
+    <!-- CSS rules to specify families:
+    font-family: 'Lobster', cursive;
+    font-family: 'Water Brush', cursive; -->
+    <style>
+        #middleL {
+            background-image: url(./middleLframe.png);
+            background-repeat: repeat-y;
+        }
+
+        #middleR {
+            background-image: url(./middleRframe.png);
+            background-repeat: repeat-y;
+            background-position: right;
+        }
+
+        #middleB {
+            background-image: url(./middleBframe.png);
+            background-repeat: repeat-x;
+            background-position: bottom;
+        }
+
+        #middleT {
+            background-image: url(./middleTframe.png);
+            background-repeat: repeat-x;
+            background-position: top;
+        }
+
+        #angleTL {
+            background-image: url(./angleTLframe.png);
+            background-repeat: no-repeat;
+        }
+
+        #angleBL {
+            background-image: url(./angleBLframe.png);
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+        
+        #angleTR {
+            background-image: url(./angleTRframe.png);
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        
+        #angleBR {
+            background-image: url(./angleBRframe.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+        #divText {
+            padding: 40px;
+            font-size: 24px;
+            font-family: 'Lobster', cursive;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="middleL">
+        <div id="middleR">
+            <div id="middleB">
+                <div id="middleT">
+                    <div id="angleTL">
+                        <div id="angleBL">
+                            <div id="angleTR">
+                                <div id="angleBR">
+                                    <div id="divText">
+                                        “A journey of a thousand miles begins with a single step” 
+                                        <br> &copy; Lao Tzu
+                                        <br>
+                                        <br>
+                                        “Man cannot discover new oceans unless he has the courage to lose sight of the shore” <br>
+                                        &copy; Andre Gide
+                                        <br>
+                                        <br>
+                                        “Traveling &mdash; it leaves you speechless, then turns you into a storyteller” <br> &copy; Ibn Battuta
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
