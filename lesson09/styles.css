@@ -1,0 +1,189 @@
+.example {
+    margin-bottom: 30px;
+    border-style: dashed;
+}
+
+/* селектор по атрибуту */
+.example#e1 [align] {
+    color: red;
+}
+
+/* селектор по конкретному атрибуту */
+.example#e2 [align="center"] {
+    color: red;
+}
+
+/* ^ начинается с указанного далее значения (в атрибуте)*/
+#e3.example [href^='http'] {
+    color: green;
+}
+
+/* $ заканчивается на указанное далее значение (в атрибуте)*/
+#e4.example [href$='css'] {
+    color: chocolate;
+}
+
+#e5.example [href$='html'] {
+    color: chartreuse;
+}
+
+/* * содержит в себе данное значение подстроку (в атрибуте)*/
+#e6.example [href*='nike'] {
+    color: teal;
+}
+
+
+
+/* каскадирование */
+#e7.example .div1-p {
+    font-size: large;
+}
+
+#e8 div p {
+    font-size: xx-small;
+}
+
+#e9 div .div1-p {
+    font-size: large;
+    color: brown;
+}
+
+/* любой уровень вложенности */
+
+/* div p {
+    font-size: large;
+} */
+
+/* .div1 p {
+    font-size: large;
+    color: brown;
+} */
+
+/* .div1 .div1-p {
+    font-size: x-small;
+    color: brown;
+} */
+
+
+
+/* комбинирование */
+#e10 .box {
+    background-color: brown;
+    width: 50px;
+    height: 50px;
+}
+
+#e10 .center {
+    text-align: center;
+}
+
+#e10 .box.center {
+    font-size: larger;
+}
+
+#e10 p.box {
+    font-size: xx-small;
+}
+
+#e11 ul.my-list li {
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+/* > применяется только к дочерним элементам */
+#e12 div > p {
+    color: #faa;
+}
+
+/* + применяется только к следующему элементу */
+#e13 div + p {
+    color: #a13;
+}
+
+/* ~ применяется ко всем последующим элементам  sibling*/
+#e14 div ~ p {
+    color: #17f;
+}
+
+
+
+
+
+/* Для другого файла Псевдоклассы и псевдоэлементы */
+
+/* :first-child первый уровень вложенности  */
+.example.e1 p:first-child {
+    color: #a13;
+}
+
+/* :last-child последний уровень вложенности  */
+.example.e2 p:last-child {
+    color: #a13;
+}
+
+/* .example.e3 p:first-of-type{
+    color: #a13;
+}
+.example.e3 span:first-of-type{
+    color: #a13;
+} */
+
+/* :first-of-type первый из этого типа  */
+.example.e3 .p:first-of-type{
+    color: #a13;
+}
+
+/* :last-of-type последний из этого типа  */
+.example.e4 .p:last-of-type{
+    color: #a13;
+}
+
+/* ::nth-child() энный элемент  */
+/* по номеру */
+.example.e5 p:nth-child(2) {
+    color: #a13;
+}
+
+/* нечётный */
+.example.e6 p:nth-child(odd) {
+    color: #a13;
+}
+
+/* чётный */
+.example.e7 p:nth-child(even) {
+    color: #a13;
+}
+
+/* по формуле, где n - текущий номер элемента*/
+.example.e8 p:nth-child(3n + 1) {
+    color: #a13;
+}
+
+/* энный какого-то типа */
+/* .example.e8 p:nth-of-type() {
+    color: #a13;
+} */
+
+.example.e9 a{
+    display: block;
+}
+/* :hover - наведение */
+.example.e9 a.link-hover:hover {
+    color: red;
+    font-weight: 900;
+}
+
+.example.e9 a.link-focus:focus {
+    color: coral;
+    font-weight: 900;
+}
+
+.example.e9 a.link-visited:visited {
+    color: orange;
+    font-weight: 900;
+}
+
+/* означает - не каждый 3-ий */
+.example.e10 p:not(:nth-child(3n)) {
+    color: #a13;
+}
