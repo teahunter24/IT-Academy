@@ -1,0 +1,44 @@
+p {
+    margin-bottom: 30px;
+}
+
+.paragraph1 {
+    display: none;
+}
+
+.paragraph2 {
+    visibility: hidden;
+}
+
+.paragraph2:hover {
+    visibility: visible;
+}
+
+.paragraph3 {
+    opacity: 0.25;
+}
+
+.paragraph3::selection {
+    opacity: 1;
+    background-color: brown;
+}
+
+
+.paragraph4 {
+    margin: 10px;
+}
+
+.example {
+    margin-bottom: 30px;
+    border-style: dashed;
+}
+
+/* !important - устанавливает приоритет стиля */
+.paragraph5 {
+    margin: 10px !important;
+}
+
+.example {
+    margin-bottom: 30px;
+    border-style: dashed;
+}

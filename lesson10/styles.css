@@ -1,0 +1,76 @@
+.example {
+    margin-bottom: 30px;
+    border-style: dashed;
+}
+
+#e1 p:first-child:first-letter {
+    color:brown;
+    font-size: larger;
+}
+
+#e2 p::first-line{
+    color:brown;
+}
+
+#e3 p::before {;
+    content: "[";
+}
+
+#e3 p::after {;
+    content: "]";
+}
+
+#e4 p::after {;
+    content: "[" attr(data-nom) "]";
+    font-size: x-small;
+    margin-bottom:: 5px;
+}
+
+#e5 p::before {;
+    content: counter(nom) ". ";
+}
+
+#e5 p {;
+    counter-increment: nom;
+}
+
+#e5 .reset {;
+    counter-reset: nom;
+}
+
+#e6 .left {
+    background-color: aquamarine;
+    float: left;
+    width: 25%;
+}
+
+#e6 .right {
+    background-color: gray;
+    float: right;
+    width: 75%;
+}
+
+/* #e6 .clearfix {
+    clear: both;
+} */
+
+#e6 .clearfix::after {
+    content: " ";
+    clear: both;
+    display: block;
+}
+
+#e7 p:first-child::selection {
+    color: brown;
+    /* color: white;
+    background-color: black; */
+}
+
+#e8 li::marker {
+    color: brown;
+    font-size: larger;
+    /* можно убрать маркеры у списка */
+    /* content: " "; */
+    /* можно использовать картинку вместо стандартных маркеров */
+    /* content: url("..."); */
+}
