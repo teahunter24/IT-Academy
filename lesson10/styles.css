@@ -23,7 +23,10 @@
 #e4 p::after {;
     content: "[" attr(data-nom) "]";
     font-size: x-small;
-    margin-bottom:: 5px;
+    /* поправка после урока 11 */
+    position: relative;
+    bottom: 1em;
+    /* margin-bottom:: 5px; */
 }
 
 #e5 p::before {;

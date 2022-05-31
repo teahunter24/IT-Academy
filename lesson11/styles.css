@@ -1,0 +1,90 @@
+p {
+   font-size: 24px; 
+   opacity: 0.25;
+}
+
+.example {
+    margin-bottom: 30px;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    border-style: dashed;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#e2 .b2 {
+    /* relative - относительный */
+    position: relative;
+    /* top: 10px;
+    left: 10px; */
+    bottom: 10px;
+    right: 10px;
+}
+
+#e2 .b3 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    /* bottom: 10px;
+    right: 10px; */
+}
+
+#e3 .b2 {
+    /* absolute - абсолютный */
+    position: absolute;
+    top: 190px;
+    left: 230px;
+}
+
+#e4 .b1 {
+    margin-right: 70px;
+}
+
+#e4 .b2 {
+    position: fixed;
+    top: 256px;
+    left: 83px;
+}
+
+/* position absolute считается от ближайшего не static родителя */
+#e5 {
+    position: relative;
+    left: 20px;
+}
+
+#e5 .b1 {
+    margin-right: 80px;
+}
+
+#e5 .b2 {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+/* почти как в примере e5 */
+#e6 {
+    position: relative;
+    left: 20px;
+}
+
+#e6 .b1 {
+    position: absolute;
+    top: 10px;
+    background-color: brown;
+    /* z-index - положение по оси z */
+    z-index: 10;
+}
+
+#e6 .b2 {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    background-color: coral;
+}
+
+#e6 .b3 {
+    margin-left: 146px;
+}

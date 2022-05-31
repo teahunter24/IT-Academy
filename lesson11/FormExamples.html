@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы для ввода данных</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Cntrl+K V - открыть HTML Preview -->
+
+    <!-- <h4></h4> -->
+    <form method="post">
+        <input placeholder="Логин"/>
+        <br>
+        <input placeholder="Пароль"/>
+        <br>
+        <br>
+
+        <label>
+            Введите имя:
+            <input name="name" placeholder="имя"/>
+        </label>
+        <br>
+        
+        <label>
+            Введите фамилию:
+            <input name="last_name" value="фамилия"/>
+        </label>
+        <br>
+
+        <label>
+            Введите возраст:
+            <input name="age" type="number"/>
+        </label>
+        <br>
+
+        <label>
+            Введите пароль:
+            <input name="password" type="password"/>
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox"/>
+            да/нет
+        </label>
+        <br>
+
+        <label>
+            <input type="checkbox"/ checked>
+            Подтвердить согласие с <a href="">условиями использования</a>
+        </label>
+        <br>
+
+        <label>
+            <input type="radio"/>
+            красный <br>
+            <input type="radio"/>
+            зеленый <br>  
+            <input type="radio"/ disabled>
+            синий
+        </label>
+        <br>
+
+        <label>
+            тут скрытое поле 
+            <input name="hidden_field" type="hidden" value="hidden-123"/>
+        </label>
+        <br>
+
+        <label>
+            Файл
+            <input type="file"/>
+        </label>
+        <br>
+
+        <label>
+            Кнопка
+            <input type="button" value="Button"/>
+        </label>
+        <br>
+
+        <label>
+            <input type="reset" value="Reset button"/>
+        </label>
+        <br>
+
+        <label>
+            <input type="submit" value="Submit button"/>
+        </label>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <button>Button</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <label>
+            Опишите себя:
+            <!-- <input type="text"/> -->
+            <textarea name="" id="" cols="30" rows="10" maxlength="50">Hello
+            </textarea>
+        </label>
+        <br>
+
+        <select name="name">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="" disabled>4</option>
+        </select>
+    </form>
+</body>
+</html>

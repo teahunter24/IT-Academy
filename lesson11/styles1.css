@@ -1,0 +1,36 @@
+/* БЭМ - блок элемент модификатор */
+
+/* селекторы - только по классам, без id и без тэгов */
+
+/* блоки */
+.menu {}
+.navigation {}
+.log {}
+.header {}
+.footer {}
+.preview {}
+.nav-menu {}
+
+/* элtмент */
+.menu__item {}
+.menu__search {}
+.preview__item {}
+.preview__text {}
+.preview__image{}
+
+/* неправильно */
+.preview .preview__item .preview__image{}
+
+/* правильно */
+.preview__image{}
+
+
+
+
+/* модификаторы */
+.preview__item--active {}
+.preview__item--error {color: red;}
+.preview__item--large {font-size: 24px;}
+
+/* другой вариант написания модификатора */
+.preview__item_active {}
