@@ -1,0 +1,10 @@
+p {
+    color:red;
+}
+
+/* не сработало */
+p:fullscreen {
+    text-decoration: overline;
+    color: blue;
+}
+

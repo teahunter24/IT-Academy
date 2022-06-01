@@ -1,0 +1,162 @@
+/* p {
+    color: red;
+} */
+
+/* горизонтальное положение экрана - ширина больше высоты */
+/* @media (orientation: landscape) {
+    p {
+        font-size: 24px;
+        color: unset;
+    }
+} */
+
+/* вертикальное положение экрана - ширина меньше высоты */
+/* @media (orientation: portrait) {
+    p {
+        color: green;
+    }
+} */
+
+
+
+
+
+
+/* max ширина и высота экрана (поля видимости) */
+/* @media (max-width: 300px) {
+    p {
+        color: darkblue;
+    }
+}
+
+@media (max-height: 300px) {
+    p {
+        text-decoration: line-through;
+    }
+} */
+
+
+
+
+
+/* min ширина и высота экрана (поля видимости) */
+/* @media (min-width: 300px) {
+    p {
+        color: darkgoldenrod;
+    }
+}
+
+@media (min-height: 300px) {
+    p {
+        text-decoration: overline;
+    }
+} */
+
+
+
+
+/* комбинирование медиа-запросов (вывод на печать и min ширина) */
+/* и */
+/* @media print and (min-width: 600px) {
+    p {
+        text-decoration: underline;
+    }
+} */
+
+/* или */
+/* @media print and (min-width: 600px) {
+    p {
+        text-decoration: underline;
+    }
+} */
+
+
+
+/* для старых браузеров "only" */
+/* @media only print {
+    p {
+        text-decoration: underline;
+    }
+} */
+
+
+
+
+/* desktop first */
+/* сначало правила для больших экранов */
+/* p {
+    color: red;
+}
+
+@media (max-width: 1024px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    p {
+        font-size: 24px;
+    }
+} */
+
+
+
+/* mobile first */
+/* сначало правила для маленьких экранов */
+/* p {
+    color: red;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    p {
+        font-size: 24px;
+    }
+} */
+
+.middle-mobile, .up-mobile, .bottom-mobile {
+    display: none;
+}
+
+/* breakpoint - точка "перехода" */
+@media (max-width: 500px) {
+    .middle-mobile, .up-mobile, .bottom-mobile {
+        display: initial;
+    }
+
+    .middle, .up, .bottom {
+        display: none;
+    }
+}
+
+
+
+/* популярные брейк-поинты (desktop-first):
+1920px
+1440px
+1200px
+1024px
+992px
+768px
+480px
+320px */
+
+
+/* Также есть
+@media (device-width:...) {} */
+
+
+
+
