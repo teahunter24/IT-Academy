@@ -1,10 +1,103 @@
-a.stars {
+.bright {
+    display: flex;
+    justify-content: center;
+}
+
+.stars {
+    background: url(images/STAR_WHITE.png);
+    /* display: inline-block; */
+    width: 188px;
+    height: 196px;
+}
+
+.bright:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+    /* width: 188px;
+    height: 196px; */
+}
+
+.bright .stars:hover ~ .stars:before {
+    background: url(images/STAR_WHITE.png);
+}
+
+
+
+
+
+
+
+
+
+
+.a, .b, .c, .d, .e {
     background: url(images/STAR_WHITE.png);
     display: inline-block;
     width: 188px;
     height: 196px;
 }
 
-a.stars:hover {
-background: url(images/STAR_ORANGE.png);
+.e:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+}
+
+.d:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+}
+
+.d:hover~.e {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.c:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+}
+
+.c:hover~.d {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.c:hover~.e {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.b:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+}
+
+.b:hover~.c {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.b:hover~.d {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.b:hover~.e {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.a:hover {
+    background: url(images/STAR_ORANGE.png);
+    cursor: pointer;
+}
+
+.a:hover~.b {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.a:hover~.c {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.a:hover~.d {
+    background: url(images/STAR_ORANGE.png);
+}
+
+.a:hover~.e {
+    background: url(images/STAR_ORANGE.png);
 }
