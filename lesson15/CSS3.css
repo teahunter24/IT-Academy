@@ -1,0 +1,51 @@
+.box {
+    height: 50px;
+    width: 100px;
+    background-color: brown;
+    display: inline-block;
+    font-size: small;
+
+    /* задание анимации (задержки) любому свойству */
+    transition:  background-color 1s, transform 1s, width 0.5s;
+}
+
+.box:hover {
+    background-color: rebeccapurple;
+    transform: scale(1.05) rotate(10deg);
+    width: 200px;
+}
+
+.circle2 {
+    border-radius: 0 20px 0 0;
+}
+
+.circle3 {
+    border-radius: 10% 50%;
+}
+
+.button-div-1 {
+    border-radius: 50%;
+}
+
+.button-div-2 {
+    border-radius: 30px 5px;
+}
+
+/* box-shadow */
+.with-shadow {
+    box-shadow: 10px 15px 5px darkblue;
+    text-align: center;
+}
+
+/* calc */
+.fillWithout150 {
+    width: 500px; /* fallback - защита от "падения" (план Б)*/
+    width: calc(100% - 150px);
+    /* width: calc(100% - 150px + 10px); */
+    /* width: calc(100% - 4 * 30px); */
+}
+
+.with_scale:hover {
+    transform: scale(1.05) rotate(10deg);
+    background-color: rebeccapurple;
+}
