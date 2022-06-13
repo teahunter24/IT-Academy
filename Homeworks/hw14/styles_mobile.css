@@ -1,0 +1,43 @@
+#head, #foot {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    background-color:lightblue;
+    color: blue; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+div #container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#menu {
+    margin: 0;
+    background-color:bisque;
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#body {
+    margin: auto;
+    max-width: 640px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#header {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#footballPicture {
+    width: 100%;
+}
+
+#text {
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

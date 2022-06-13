@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maket_Form</title>
+    <link rel="stylesheet" href="styles_laptop.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles_mobile.css" media="(max-width: 640px)">
+</head>
+
+<body>
+
+    <div class="second_form">
+        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <form>
+            <label for="title_article">
+                Название статьи:
+                <input name="title_article" id="title_article">
+            </label>
+        </form>
+        
+        <form>
+            Рубрика:      
+            <select name="sphere" id="sphere"> 
+                <option value="">программирование</option>
+                <option value="">кулинария</option> 
+                <option value="">история</option>
+                <option value="">спорт</option>  
+            </select>
+            <br>
+        </form>
+
+        <form>
+            <label for="publication">
+                <p id="publication_title">Публикация:</p>
+                <input type="radio" value="site" id="publication"> на сайте <br id="br">
+                <input type="radio" value="magazine"> в журнале <br id="br">
+                <input type="radio" value="site_magazine"> на сайте и в журнале <br id="br">
+            </label>
+        </form>
+
+        <!-- <form>
+            <label for="publication">
+                <p id="publication_title">Публикация:</p> <br>
+                <input type="radio" value="site" id="publication"> на сайте <br>
+                <input type="radio" value="magazine"> в журнале <br>
+                <input type="radio" value="site_magazine"> на сайте и в журнале <br>
+            </label>
+        </form> -->
+
+        <form>
+            <label for="comments_permission">
+                Разрешить комментарии:
+                <input type="checkbox" checked>
+            </label>
+        </form>
+
+        <form>
+            <label for="text_title">Текст статьи: <br> 
+                <textarea name="text" id="text_title"></textarea><br>
+            </label>
+        </form>
+
+        <input type="submit" value="Опубликовать">
+    </div>
+    
+</body>
+</html>

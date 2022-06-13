@@ -1,0 +1,26 @@
+.second_form {
+    width: 100%;
+    padding: 10px;
+    /* border-style: double;
+    border-color: red; */
+    margin: auto;
+    /* color: blue; */
+}
+
+.second_form #title_article {
+    width: 94%;
+    margin: 0;
+}
+
+.second_form #sphere {
+    width: 96%;
+    margin: 0;
+}
+
+.second_form #publication_title {
+    margin: 0;
+}
+
+.second_form #text_title {
+    width: 95%;
+}

@@ -1,0 +1,64 @@
+.first_form {
+    width: 320px;
+    padding-left: 10px;
+    border-style: double;
+    border-color: red;
+}
+
+.first_form #title_article {
+    width: 300px;
+}
+
+.first_form #sphere {
+    width: 308px;
+}
+
+.first_form #publication_title {
+    margin: 0;
+}
+
+.first_form #text_title {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+.second_form {
+    padding-left: 10px;
+    border-style: double;
+    border-color: red;
+    width: 630px;
+}
+
+.second_form #title_article {
+    margin-left: 60px;
+    width: 380px;
+}
+
+.second_form #sphere {
+    margin-left: 115px;
+    margin-top: 3px;
+    width: 200px;
+}
+
+.second_form #publication {
+    margin: 0;
+}
+
+.second_form #br {
+    display: none;
+}
+
+.second_form #publication_title {
+    display: inline-flex;
+    margin: 0 88px 0 0;
+}
+
+.second_form #text_title {
+    width: 560px;
+}
