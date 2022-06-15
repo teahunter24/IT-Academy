@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box {
+            width: 200px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+
+
+        /* keyframes - ключевые кадры */
+        .animation-1 {
+            color: black;
+            animation: Animation1 3s infinite;
+            /* infinite - бесконечное повторение */
+        }
+
+        @keyframes Animation1 {
+            from{background-color: green;}
+            to{background-color: blue;}
+        }
+
+
+
+
+        .animation-2 {
+            color: black;
+            animation: Animation2 10s infinite;
+            /* infinite - бесконечное повторение */
+        }
+
+        @keyframes Animation2 {
+            from{background-color: red;}
+            25%{background-color: yellow}
+            50%{background-color: green}
+            75%{background-color: orange}
+            to{background-color: blue;}
+        }
+
+
+
+
+        /* две анимации одновременно */
+        .animation-3 {
+        color: black;
+        animation: 
+            Animation31 3s infinite;
+            Animation32 4s infinite;
+        }
+
+        @keyframes Animation31 {
+            from{background-color: blue;}
+            to{background-color: red;}
+        }
+
+        @keyframes Animation32 {
+            from{background-color: red;}
+            to{background-color: blue;}
+        }
+
+        
+
+
+        /* анимация при наведении*/
+        .animation-4:hover {
+        color: black;
+        animation: 
+            Animation4 3s infinite;
+        }
+
+        @keyframes Animation4 {
+        from{font-size: 16px;}
+        to{font-size: 20px;}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-1 box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repudiandae repellat, error autem consequatur et ut quas, amet cum voluptatem illum sunt libero commodi molestias laborum. Odit optio qui neque.</div>
+    <br>
+
+    <div class="animation-2 box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repudiandae repellat, error autem consequatur et ut quas, amet cum voluptatem illum sunt libero commodi molestias laborum. Odit optio qui neque.</div>
+    <br>
+
+    <div class="animation-3 box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repudiandae repellat, error autem consequatur et ut quas, amet cum voluptatem illum sunt libero commodi molestias laborum. Odit optio qui neque.</div>
+    <br>
+
+    <div class="animation-4 box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti repudiandae repellat, error autem consequatur et ut quas, amet cum voluptatem illum sunt libero commodi molestias laborum. Odit optio qui neque.</div>
+    <br>
+</body>
+</html>

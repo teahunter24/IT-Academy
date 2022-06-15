@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline SVG</title>
+    <style>
+        svg:first-child {
+            
+        }
+
+        /* для svg  будет работать, если есть атрибут viewBox */
+        svg, img {
+            height: 100px;
+            width: 100px;
+
+            fill: blue;
+        }
+
+        .background-big-svg {
+            background-repeat: no-repeat;
+            width: 48px;
+            height: 48px;
+        }
+
+        .rotate {
+            transition: all 1s;
+        }
+
+        .rotate:hover {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h3>img-svg иконки</h3>
+    <img src="./icons/add.svg" alt="add_svg" width="48px" height="48px">
+    <br>
+    <img src="./icons/close.svg" alt="add_svg" width="48px" height="48px">
+    <br>
+    <img src="./icons/star.svg" alt="add_svg" width="48px" height="48px">
+    <br>
+    <br>
+
+
+    <h3>background-svg иконки</h3>
+    <div class="background-big-svg" style="background-image: url(./icons/add.svg);" ></div>
+    <br>
+    <div class="background-big-svg" style="background-image: url(./icons/close.svg);" ></div>
+    <br>
+    <div class="background-big-svg" style="background-image: url(./icons/star.svg);" ></div>
+    <br>
+    <br>
+
+
+    <h3>inline-svg иконки</h3>
+    <svg  class="rotate" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 48 48"><path d="M12.45 37.65 10.35 35.55 21.9 24 10.35 12.45 12.45 10.35 24 21.9 35.55 10.35 37.65 12.45 26.1 24 37.65 35.55 35.55 37.65 24 26.1Z"/></svg>
+    <br>
+    <svg class="rotate" xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 48 48"><path d="M11.65 44 16.3 28.8 4 20H19.2L24 4L28.8 20H44L31.7 28.8L36.35 44L24 34.6Z"/></svg>
+    <br>
+    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M22.5 38V25.5H10V22.5H22.5V10H25.5V22.5H38V25.5H25.5V38Z"/></svg>
+    <br>
+    <br>
+</body>
+</html>
