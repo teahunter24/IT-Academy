@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS examples 8</title>
+    <script>
+        //Циклы - выполнение действий несколько раз
+
+        alert('Start');
+
+        // for (<объявление переменных>; <проверка условий>; <итеративные действия>;) { действия... }
+
+        // старый варинт
+        /* for (var count = 1;; count++) {
+            console.log('count=' + count);
+            if (count > 20) {
+                alert('Граница достигнута!\n (count= ' + count + ')');
+                break; // прекратить выполнение этого цикла
+            } 
+        } */
+
+
+
+        // используем блок условий
+        /* for (var count = 1; count < 20; count++) {
+            console.log('count=' + count);
+        }
+        alert('Граница достигнута!'); 
+
+        alert('End'); */
+
+
+
+        // используем блок итеративных действий
+        /* for (var count = 1; count < 15; count += 3) {
+            console.log('count=' + count);
+        }
+        alert('Граница достигнута!');
+
+        alert('End'); */
+
+        for (var count = 3; count < 40; count++) {
+            if (count == 13) { 
+                continue;
+            }
+            /* if (count % 13 == 0) { // если count делится на 13 без остатка
+                continue;
+            } */
+            console.log('Этаж: ' + count);
+        }
+        
+        alert('End');
+    </script>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolorum quae ea velit necessitatibus minus incidunt at qui dolorem ex amet, cupiditate quas et quo. Dignissimos, odio quaerat? Tempore, dolor!</p>
+</body>
+</html>

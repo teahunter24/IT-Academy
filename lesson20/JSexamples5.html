@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS examples 5</title>
+    <script>
+        // выбор цвета радуши по номеру
+        var colorStr = prompt('Какой по номеру цвет радуги отобразить?\n(1,2,...7)');
+        var color = parseInt(colorStr);
+        var colorName;
+
+        // старый вариант
+        /* if (color < 1 || color >7) {
+            alert('Цвет с таким номером нет ');
+        } else {
+            if (color == 1) {
+                colorName = 'красный';
+            } else if (color == 2) {
+                colorName = 'оранжевый';
+            } else if (color == 3) {
+                colorName = 'желтый';
+            } else if (color == 4) {
+                colorName = 'зеленый';
+            } else if (color == 5) {
+                colorName = 'голубой';
+            } else if (color == 6) {
+                colorName = 'синий';
+            } else if (color == 7) {
+                colorName = 'фиолетовый';
+            }
+
+        alert('Цвет: ' + colorName);
+        } */
+
+            // if (color == 1) {
+            //     colorName = 'красный';
+            // } else if (color == 2) {
+            //     colorName = 'оранжевый';
+            // } else if (color == 3) {
+            //     colorName = 'желтый';
+            // } else if (color == 4) {
+            //     colorName = 'зеленый';
+            // } else if (color == 5) {
+            //     colorName = 'голубой';
+            // } else if (color == 6) {
+            //     colorName = 'синий';
+            // } else if (color == 7) {
+            //     colorName = 'фиолетовый';
+            // }
+
+        // swict-case
+        //конструкция:
+        /* switch (<переменная>) {
+            case <значение 1>:
+        } */
+
+        if (color < 1 || color > 7) {
+            alert('Цвет с таким номером нет ');
+        } else {
+            switc(color) {
+                case 1:
+                    colorName = 'красный';
+                    break;
+                case 2:
+                    colorName = 'оранжевый';
+                    break;
+                case 3:
+                    colorName = 'желтый';
+                    break;
+                case 4:
+                    colorName = 'зеленый';
+                    break;
+                case 5:
+                    colorName = 'голубой';
+                    break;
+                case 6:
+                    colorName = 'синий';
+                    break;
+                case 7:
+                    colorName = 'фиолетовый';
+                    break;
+                default:
+                    colorName = 'неизвестный'    
+            }
+
+            alert('Цвет: ' + colorName);
+            
+    </script>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero laborum tenetur inventore deleniti maiores animi nemo mollitia, officia quam sequi nobis cum quisquam veritatis praesentium, dicta provident iste voluptatum rerum?</p>
+</body>
+</html>

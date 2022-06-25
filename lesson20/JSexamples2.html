@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS examples 2</title>
+    <script>
+        /* основные типы данных в JS:
+        - строк
+        - число
+        - логическое - только "да" или "нет" ("true" / "false")
+        - NaN - non a number
+        - null - пустое значение
+        - undefined - пустое значение */
+
+
+
+        // сравнить строки
+        console.log("Сравнить строки:");
+        console.log('"яблоко" > "ананас"', "яблоко" > "ананас");
+        console.log('"клубника" >= "малина"', "клубника" >= "малина");
+
+        console.log('\n');
+        // так складывать неверно, складываются строки
+        /*const userInputA = prompt ('Введите число А');
+        const userInputB = prompt ('Введите число В');
+        alert("A + B =" + (userInputA + userInputB));*/
+
+
+        
+        // parse - преобразовать/достать
+        console.log("parseInt:");
+        console.log('"1.2"', parseInt("1.2")); //1
+        console.log('"3"', parseInt("3"));
+        console.log('"31 метр"', parseInt("31 метр")); //31
+        console.log('"нужно 2 кг"', parseInt("нужно 2 кг")); 
+
+        //  Int (integer) - целое
+        console.log("parseFloat:");
+        console.log('"1.2"', parseFloat("1.2")); //1.2
+        console.log('"3"', parseFloat("3")); //3
+        console.log('"31.3 метр"', parseFloat("31.3 метр")); //31.3
+        console.log('"нужно 2.5 кг"', parseFloat("нужно 2.5 кг")); //???
+
+        // Number - число
+        console.log("Number:");
+        console.log('"1.2"', Number("1.2")); //1.2
+        console.log('"3"', Number("3")); //3
+        console.log('"31.3 метр"', Number("31.3 метр")); //???
+        console.log('"нужно 2.5 кг"', Number("нужно 2.5 кг")); //???
+
+        
+
+        // NaN - not a number
+        // NaN и любое действие с числом = NaN
+
+        // Infinity - бесконечность
+
+        var parseFloatResult =  parseFloat("нужно 2.5 кг"); //NaN
+        console.log('это NaN?', isNaN(parseFloatResult)); //true
+        console.log('это конечное число?', isFinite(Infinity)); //Finite - конечный
+
+        console.log('\n');
+        console.log('if-блоки:');
+
+        // ЕСЛИ (логическое условие == TRUE) ТО { действия... }
+        // if (логическое условие == TRUE)  { действия... }
+        if (true) {
+            console.log('Я всегда вывожусь в консоль'); 
+        }
+
+        if (5 > 3) {
+            console.log('Я всегда вывожусь в консоль'); 
+        }
+
+
+
+        if (false) {
+            console.log('Я никогда не отображусь в консоли'); 
+        }
+
+        if (5 < 3) {
+            console.log('Я никогда не отображусь в консоли'); 
+        }
+
+
+        console.log('\n');
+        console.log('if-блоки с else:');
+
+        // ЕСЛИ (логическое условие == TRUE) ТО { действия... } ИНАЧЕ { другие действия... }
+        // if (логическое условие == TRUE)  { действия... } else { другие действия... }
+        if (5 < 3) {
+            console.log('Я никогда не отображусь в консоли'); 
+        } else {
+            console.log('Это строка из "иначе"');
+            console.log('Это строка из "иначе" тоже');
+        }
+
+
+
+        console.log('\n');
+
+        var userInputA = prompt ('Введите число А');
+        var userInputB = prompt ('Введите число В');
+
+        // страя версия
+        /* if (parseInt(userInputA) > parseInt(userInputB)) {
+            alert('Первое число больше');
+        } else if {
+            alert('Первое число меньше');
+        } */
+
+        // улучшенная версия
+        if (parseInt(userInputA) > parseInt(userInputB)) {
+            alert('Первое число больше');
+        } else if (parseInt(userInputA) == parseInt(userInputB)) {
+            alert('Числа равны');
+        } else {
+            alert('Первое число меньше');
+        }
+
+
+
+        var userInputA = prompt ('Введите число А');
+        userInputA = parseInt(userInputA);
+        var userInputB = parseInt(prompt ('Введите число В'));
+
+        if (isNaN(userInputA)) {
+            alert('Неверное число А');
+        } else if (isNaN(userInputB)) {
+            alert('Неверное число B');
+        } else {
+            alert("A + B = " + (userInputA + userInputB));
+        }
+
+        //может быть ещё такой вариант
+        /* if (isNaN(userInputA)) {
+            alert('Неверное число А');
+        } else {
+            if (isNaN(userInputB)) {
+            alert('Неверное число B');
+            } else {
+            alert("A + B = " + (userInputA + userInputB));
+            }
+        } */
+
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum vel fuga. Recusandae, quod eveniet, quibusdam dicta corporis voluptatibus ut quas, velit perferendis ducimus et itaque reprehenderit asperiores omnis voluptas!</p>
+</body>
+</html>

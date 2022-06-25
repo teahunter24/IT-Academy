@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS examples 3</title>
+    <script>
+        
+        /* var userInputC = prompt ('Введите число C');  
+        var c = parseInt(userInputC);
+        var userInputD = prompt ('Введите число D');  
+        var d = parseInt(userInputD);
+        var userInput = prompt ('Какое число вывести?\n(С или D)'); */
+
+        var userInputC = prompt ('Введите число C');
+        var userInputD = prompt ('Введите число D');
+        var whatToShow = prompt ('Какое число вывести?\n(С или D)');
+
+        //старый вариант
+        /* if (whatToShow === 'C' || whatToShow === 'c') {
+            alert('Отображаю:' + userInputC);
+        } else if (whatToShow === 'D' || whatToShow === 'd') {
+            alert('Отображаю:' + userInputD);
+        } else {
+            alert('Ошибка! не понятно что отобразить');
+        } */
+
+
+        /* if (whatToShow === 'C') {
+            alert('Отображаю:' + userInputC);
+        } else {
+            alert('Отображаю:' + userInputD);
+        } */
+        
+        // тернарный оператор (условные операции)
+        // условие ? значение, если условие == TRUE : значение, если иначе
+        // (условие) ? (значение, если условие == TRUE) : (значение, если иначе)
+        // var result = (whatToShow === 'C') ? userInputC : userInputD;
+        // alert('Отображаю:' + result);
+        
+        // Пример преобразования if в тернарный оператор
+        var result = (whatToShow === 'C' || whatToShow === 'c') ? ('Отображаю:' + userInputC)
+        : (whatToShow === 'D' || whatToShow === 'd')
+            ? ('Отображаю:' + userInputD)
+            : ('Ошибка! не понятно что отобразить')
+        alert(result);
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum vel fuga. Recusandae, quod eveniet, quibusdam dicta corporis voluptatibus ut quas, velit perferendis ducimus et itaque reprehenderit asperiores omnis voluptas!</p>
+</body>
+</html>

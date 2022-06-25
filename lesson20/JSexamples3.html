@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS examples 3</title>
+    <script>
+        
+        var userInputA = prompt ('Введите число А');
+        var userInputB = prompt ('Введите число В');
+
+        // страя версия
+        /* if (parseInt(userInputA) > parseInt(userInputB)) {
+            alert('Первое число больше');
+        } else if {
+            alert('Первое число меньше');
+        } */
+
+        // улучшенная версия
+        if (parseInt(userInputA) > parseInt(userInputB)) {
+            alert('Первое число больше');
+        } else if (parseInt(userInputA) == parseInt(userInputB)) {
+            alert('Числа равны');
+        } else {
+            alert('Первое число меньше');
+        }
+
+
+
+        var userInputA = prompt ('Введите число А');
+        userInputA = parseInt(userInputA);
+        var userInputB = parseInt(prompt ('Введите число В'));
+
+        if (isNaN(userInputA)) {
+            alert('Неверное число А');
+        } else if (isNaN(userInputB)) {
+            alert('Неверное число B');
+        } else {
+            alert("A + B = " + (userInputA + userInputB));
+        }
+
+        //может быть ещё такой вариант
+        /* if (isNaN(userInputA)) {
+            alert('Неверное число А');
+        } else {
+            if (isNaN(userInputB)) {
+            alert('Неверное число B');
+            } else {
+            alert("A + B = " + (userInputA + userInputB));
+            }
+        } */
+
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum vel fuga. Recusandae, quod eveniet, quibusdam dicta corporis voluptatibus ut quas, velit perferendis ducimus et itaque reprehenderit asperiores omnis voluptas!</p>
+</body>
+</html>
