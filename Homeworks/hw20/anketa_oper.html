@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKETA</title>
+    <script>
+
+        const promptSurname = prompt('Введите Вашу фамилию?!');
+        console.log('Фамилия: ', promptSurname);
+
+        const promptName = prompt('Введите Ваше имя?!');
+        console.log('Имя: ', promptName);
+
+        const promptPatronymic = prompt('Введите Ваше отчество?!');
+        console.log('Отчество: ', promptPatronymic);
+
+
+
+        const promptAge = prompt('Введите Ваш возраст?!');
+        var promptAgeNumber = Number(promptAge);
+        console.log('Возраст в годах: ', promptAgeNumber * 365);
+        console.log('Через 5 лет Вам будет: ', promptAgeNumber + 5);
+        
+
+
+        const confirmGender = confirm('Ваш пол - мужской?');
+
+        let gender =  ''
+        confirmGender == true ? gender = 'Пол: мужской' : gender = 'Пол: женский'
+
+        let pension = ''
+        promptAgeNumber > 58 ? pension = 'Вы на пенсии: да' : pension = 'Вы на пенсии: нет'
+
+        alert(`Ваше ФИО: ${promptSurname} ${promptName} ${promptPatronymic} \n Ваш возраст в годах: ${promptAgeNumber} \n Ваш возраст в днях: ${promptAgeNumber * 365} \n Через 5 лет Вам будет: ${promptAgeNumber + 5} \n ${gender} \n ${pension}`);
+
+    </script>
+</head>
+
+<body>
+    <p>ANKETA</p>
+</body>
+</html>
