@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSexamples Array</title>
+    <script>
+
+        // все данные в массиве - одного типа
+        // массив из 5-и чисел
+        var productsWeight = [1.5, 4.5, 3.5, 5.5, 6.5];
+        /*
+        index 0 - 1.5
+        index 1 - 4.5
+        index 2 - 3.5
+        index 3 - 5.5
+        index 4 - 6.5
+        */
+
+        //получить значение из массива но меру из массива
+        //  `имя массива[номер элемента]`
+        console.log('элемент с номером 0 = ' + productsWeight[0]);
+        console.log('элемент с номером 1 = ' + productsWeight[1]);
+        console.log('элемент с номером 2 = ' + productsWeight[2]);
+        console.log('элемент с номером 3 = ' + productsWeight[3]);
+        console.log('элемент с номером 4 = ' + productsWeight[4]);
+
+        console.log('весь массив = ' + productsWeight);
+
+
+
+
+        // все данные в массиве - разного типа
+        var array = [100, 'Привет', 1.61, 'мир', NaN];
+        /*
+        index 0 - 100
+        index 1 - Привет
+        index 2 - 1.61
+        index 3 - мир
+        index 4 - NaN
+        */
+        console.log('array = ' + array);
+
+
+
+        //методы работы с массивом:
+
+        // .length - длина массива
+        var numberOfElements1 = array.length; //5
+        var numberOfElements2 = ['Hello', 'world', '!'].length; //3
+        console.log('numberOfElements1 = ' + numberOfElements1);
+        console.log('numberOfElements2 = ' + numberOfElements2);
+
+
+
+        // .push - добавить элемент в конец массива
+        array.push('новый элемент');
+        console.log('длина массива после добавления элемента = ' + array.length); //6
+        console.log('\n');
+
+        /*
+        index 0 - 100
+        index 1 - Привет
+        index 2 - 1.61
+        index 3 - мир
+        index 4 - NaN
+        index 5 - новый элемент
+        */
+
+        var lastElementNumber = array.length - 1;
+        console.log('номер последнего элемента в массиве = ' + lastElementNumber); //5
+        //вывовод "нового элемента"
+        console.log('значение последнего элемента в массиве = ' + array[lastElementNumber]); //новый элемент
+
+        console.log('массив array = ');
+        console.log(array);
+        console.log('\n');
+
+
+
+        // .pop - удалить элемент из массива (с конца)
+        var lastElement = array.pop();
+        console.log('значение последнего элемента в массиве = ' + lastElement);
+        console.log('после удаления элемента, длина массива = ' + array.length); //5
+
+        array.pop();
+        console.log('значение последнего элемента в массиве = ' + lastElement);
+        console.log('после второго удаления элемента, длина массива = ' + array.length); //4
+        console.log('массив array сейчас = ');
+        console.log(array);
+        console.log('\n');
+
+
+
+        // delete - удалить элемент из массива (из произвольного места)
+        delete array[1];
+        console.log('массив array после удаления элемента №1 = ');
+        console.log(array);
+        console.log('array[1] = ' + array[1]);
+        console.log('\n');
+
+        // undefined
+        console.log('Элементы за пределами массива:');
+        console.log('array[-1] = ' + array[-1]);
+        console.log('array[12] = ' + array[12]);
+        console.log('\n');
+
+        //null
+        var variable = null;
+        array[1] = null;
+
+        function nullTest() {
+            console.log('вызов функции nullTest');
+            return null;
+        }
+
+        nullTest();
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

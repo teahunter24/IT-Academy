@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSexamples Objects</title>
+    <script>
+        //ассоциативный массив, хэш, (для других языков - map, словарь)
+
+        /* Пример обычного массива:
+        index   - value
+        -----------------------
+        index 0 - 100
+        index 1 - Привет
+        index 2 - 1.61
+        index 3 - мир
+        index 4 - NaN
+        index 5 - новый элемент
+        */
+
+        /* Пример АССОЦИАТИВНОГО массива:
+        key (строка)   - value
+        --------------------------
+        "Привет"       - "Hello"
+        "Пока"         - "Good bay"
+        "Мир"          - "World"
+        "0"            - null
+        "test"         - [1,2,3]
+        "result"       - 42
+        */
+
+        // dictionary - словарь
+        var dict = {}; //пустой объект
+        //var array = []; // пустой массив
+
+        // добавление пары ключ-значение
+        
+        // имя-объекта["ключ"] = ""
+        dict["test"] = "я тестовая строка";
+
+        /* dict:
+        key (строка)   - value
+        --------------------------
+        "test"         - "я тестовая строка"
+        */
+
+        console.log('dict:');
+        console.log(dict);
+        console.log('\n');
+
+        dict["это тестовый ключ"] = "а это - значение";
+        console.log('значение по ключу "test": ' + dict["test"]);
+        console.log('dict после добавления нового значения:');
+        console.log(dict);
+
+        // удаление пары ключ-значение из объекта:
+        delete dict["test"];
+
+        console.log('dict["test"] = ' + dict["test"]);
+        console.log('dict после удаления пары ключ-значение "test":');
+        console.log(dict);
+        console.log('\n');
+
+        // другое обращение к значению:
+        // dict["result"] = 42;
+        dict.result = 42;
+        console.log('значение по ключу "result": ' + dict.result);
+        console.log('dict после добавления нового значения:');
+        console.log(dict);
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

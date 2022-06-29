@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSexamplesFunctions</title>
+    <script>
+        console.log('Hello!');
+
+
+        /* 
+        function <имя функции> (аргумент1, арг2, ...) {
+            ...
+        return <значение>;
+        }
+        */
+        function sum(a, b) {
+            return a + b;
+        }
+
+        // функция без аргументов
+        function getPi() {
+            return 3.1415;
+        }
+
+        var pi = 3.1415;
+
+        var s = sum (3, 5); // 3 + 5
+        var s2 = sum (4, 5); // 4 + 5
+        console.log("значение s=" + s);
+
+
+        // считаем площадь круга
+        var circleSquare1 = pi * 3 * 3;
+        var circleSquare2 = getPi() * 3 *3;
+
+        console.log("circleSquare1=" + circleSquare1);
+        console.log("circleSquare2=" + circleSquare2);
+
+
+        // посчитаем площадь круга
+        function calcCircleSquare(R) {
+            var result = getPi() * R * R;
+            console.log('функция calcCircleSquare посчитала площадь=' + result);
+            return result;
+        }
+
+        var circleSquare3 = calcCircleSquare(4);
+        var circleSquare4 = calcCircleSquare(5);
+
+        console.log("circleSquare3=" + circleSquare3);
+        console.log("circleSquare4=" + circleSquare4);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

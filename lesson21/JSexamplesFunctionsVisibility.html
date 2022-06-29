@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSexamples Functions Visibility</title>
+    <script>
+        // эти переменные ГЛОБАЛЬНОЙ области видимости (на самом верхнем уровне, без вложенности)
+        var a = 'Привет ';
+        var b = 'мир';
+        var c = ', а?';
+
+        console.log('до функции:' + a + b + c);
+
+        function printBuy(a) {
+            // эти переменные ЛОКАЛЬНОЙ области видимости
+            // внутри функции переменные временно перезаписались на другие значения
+            // когда мы выйдем из функции - эти перемнные пропадут (или вернут прошлое значение, если оно было)
+            // var a = 'Пока ';
+            var b = 'день';
+            console.log('внутри функции:' + a + b + c);
+        }
+
+        printBuy('Пока ');
+
+        console.log('после функции:' + a + b + c);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
