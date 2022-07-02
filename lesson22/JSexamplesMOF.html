@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSexamples.html</title>
+    <script>
+        console.log('Hello');
+
+        var capitalArray = ["Minsk", "Paris", "Budapest", "London", "Tokio"];
+        var capitalObject = {
+            "Belarus": "Minsk",
+            "France": "Paris",
+            "Hungary": "Budapest",
+            "Great Britain": "London",
+            "Japan": "Tokio",
+        };
+
+        console.log("capitalArray: ");
+        console.log(capitalArray);
+        console.log("\n");
+
+        console.log("capitalObject: ");
+        console.log(capitalObject);
+        console.log("\n");
+
+        // Вывод руками
+        console.log("Вывод руками:");
+        console.log("city " + capitalArray[0]);
+        console.log("city " + capitalArray[1]);
+        console.log("city " + capitalArray[2]);
+        console.log("city " + capitalArray[3]);
+
+        console.log("\n");
+
+        // Часть кода для перебора всех элементов массива
+        // for (var index = 0; index < имя-массива.length; index += 1) 
+        // Вывод используя for
+        console.log("Вывод используя for:");
+
+        for (var index = 0; index < capitalArray.length; index += 1) {
+            console.log("city " + capitalArray[index]);
+        }
+
+        console.log("\n");
+
+
+        // Вывод используя for in
+        // for in "проходится" по индексам массива (0, 1, 2, ... capitalArray.length - 1)
+        console.log("Вывод используя for in:");
+
+        for (var index in capitalArray) {
+            console.log("index = " + index);
+            console.log("city " + capitalArray[index]);
+        }
+
+        console.log("\n");
+
+
+        // Вывод используя for of
+        // for of "проходится" по значениям массива ("Minsk", "Paris", ... , "Tokio")
+        console.log("Вывод используя for of:");
+
+        for (var value of capitalArray) {
+            console.log("city " + value);
+        }
+
+        console.log("\n");
+        console.log("\n");
+        console.log("\n");
+
+
+
+
+
+        // Работа с объектом
+        console.log("Работа с объектом:");
+        console.log("\n");
+
+        console.log("Вывод руками:");
+        console.log("The capital of Belarus is " + capitalObject["Belarus"]);
+        console.log("The capital of France is " + capitalObject["France"]);
+        console.log("The capital of Hungary is " + capitalObject["Hungary"]);
+        console.log("The capital of Japan is " + capitalObject["Japan"]);
+
+        /* var capitalObject = {
+            "Belarus": "Minsk",
+            "France": "Paris",
+            "Hungary": "Budapest",
+            "Japan": "Tokio",
+        }; */
+        console.log("\n");
+
+
+        // Работа с объектом
+        // Вывод используя for in
+        // for in "проходится" по ключам (Belarus, france, ..., Japan)
+        console.log("Вывод используя for in:");
+
+        for (var key in capitalObject) {
+            // console.log("key = " + key);
+            // console.log("city " + capitalObject[key]);
+            console.log("The capital of " + key + " is " + capitalObject[key]);
+        }
+
+        console.log("\n");
+
+
+        // Вывод используя for of
+        // for of "проходится" по значениям объекта ("Minsk", "Paris", ... , "Tokio")
+        console.log("Вывод используя for of:");
+
+        for (var value of Object.values(capitalObject)) {
+            console.log("city " + value);
+        }
+
+        console.log("\n");
+
+
+    </script>
+</head>
+<body>
+    <p>Hello</p> 
+</body>
+</html>
