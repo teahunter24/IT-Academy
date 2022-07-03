@@ -152,7 +152,9 @@ console.log('\n');
 // Встроенные объекты (Date - дата и время)
 console.log('Встроенные объекты (Date - дата и время):');
 
-var now = Date();
+var now = Date(); // получить сегодня
 var yesterday = new Date ("2022-07-01");
-console.log("now: " + now);
-console.log("yesterday: " + yesterday);
+
+console.log("now: ", now);
+console.log("yesterday: ", yesterday);
+console.log("в этот момент год: ", now.getFullYear());
