@@ -2,17 +2,28 @@
     font-family: sans-serif;
     color:#333333;
     text-decoration: none;
+    /* background-color: #ECF3FB; */
+}
+
+.background {
+    /* background-color: #ECF3FB; */
+    background-color: #dfec94;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
+    
     position: absolute;
     width: 100%;
     height: 60px;
     left: 0px;
     top: 0px;
     background-color: #ffffff;
-    border-color: red;
-    border-style: dashed;
+    /* border-color: red;
+    border-style: dashed; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -27,6 +38,7 @@
 }
 
 .header__logo-text {
+    background-color: #ffffff;
     font-family: 'Manrope', sans-serif;
     color: black;
     text-decoration: none;
@@ -38,13 +50,71 @@
 }
 
 .header__nav {
-    color: red;
     text-decoration: none;
     font-weight: 400;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 50%;
+}
+
+.header__nav-pages {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+  /* Контейнер <div> - необходим для размещения выпадающего содержимого */
+  .header__nav-pages_dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+/* Кнопка выпадающего списка */
+.header__nav-pages_dropbtn {
+    background-color: #ffffff;
+    /* padding: 16px; */
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* Выпадающее содержимое (скрыто по умолчанию) */
+  .header__nav-pages_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 170px;
+    box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+    z-index: 1;
+    border-radius: 16px; 
+  }
+  
+  /* Ссылки внутри выпадающего списка */
+  .header__nav-pages_dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+  .header__nav-pages_dropdown-content a:hover {
+    color: #1749B3;
+}
+  
+  /* Показать выпадающее меню при наведении курсора */
+  .header__nav-pages_dropdown:hover .header__nav-pages_dropdown-content {
+    display: block;
+}
+  
+  /* Изменение цвета текста при отображении содержимого раскрывающегося списка */
+  .header__nav-pages_dropdown:hover .header__nav-pages_dropbtn {
+    color: #1749B3;
+}
+
+.header__nav-link {
+    margin-right: 45px;
 }
 
 .header__button-login {
@@ -58,26 +128,21 @@
 }
 
 
-.background {
-    /* background-color: #ECF3FB; */
-    background-color: red;
-    width: auto;
-    height: auto;
-}
 
 
 
 
-.start__using {
+.start-using {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 120px;
+    justify-content: center;
+    /* padding-top: 10vh; */
 }
 
-.start__using-text{
-    width: 592px;
-    height: 500px;
+.start-using__text{
+    width: 40vw;
+    height: 85vh;
+    margin: 13vh 1vh;
     background: #1749B3;
     box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
     border-radius: 32px;
@@ -87,10 +152,13 @@
     color: #ffffff;
 }
 
-.start__using-text--wrapper {
+.start-using__text_wrapper {
     /* height: inherit; */
-    padding-left: 9%;
-    padding-right: 18%;
+    background-color: #1749B3;
+    margin-left: 9%;
+    margin-right: 18%;
+    /* padding-left: 9%;
+    padding-right: 18%; */
     /* padding-top: 23%; */
     width: auto;
     height: 300px;
@@ -98,7 +166,8 @@
     flex-direction: column;
 }
 
-.start__using-text--header{
+.start-using__text_title {
+    background-color: #1749B3;
     font-weight: 700;
     font-size: 36px;
     line-height: 140%;
@@ -108,7 +177,8 @@
     padding-right: 9% */
 }
 
-.start__using-text--descriptions {
+.start-using__text_descriptions {
+    background-color: #1749B3;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -118,14 +188,15 @@
     padding-right: 9%; */
 }
 
-.start__using-text--button {
+.start-using__text_button {
+    background-color: #1749B3;
     height: 15%;
     /* padding-left: 9%; */
 }
 
-.start__using-text--button--su {
+.start-using__text_button_su {
     width: 40%;
-    height: 100%;
+    height: 3em;
     padding: 0;
     border-radius: 16px;
     border-style: none;
@@ -138,11 +209,142 @@
     align-items: center;
 }
 
-.start__using-picture{
-    width: 592px;
-    height: 500px;
-    background: url(images/subscriptions_logo.png);
-    background-size: cover;
+.start-using__picture{
+    width: 40vw;
+    height: 85vh;
+    margin: 13vh 1vh;
     box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
     border-radius: 32px;
 }
+
+.start-using__picture img{
+    width: 40vw;
+    height: 85vh;
+    display: block;
+    margin: auto;
+    border-radius: 32px;
+}
+
+/* .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+.subscription__container {
+    display: flex;
+    margin-top: 2vh;
+}
+
+.subscription__title {
+    margin-top: 15vh;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #171717;
+}
+
+.subscription__text {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    width: 82vw;
+    height: 58vh;
+    border-radius: 32px;
+}
+
+.subscription__text_wrapper {
+    /* margin-left: 9%;
+    margin-right: 18%; */
+    width: 30vw;
+    height: 58vh;
+    margin-top: 10vh;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.subscription__text_wrapper_title {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 140%;
+    color: #171717;
+    /* margin-top: 2.5em; */
+    /* margin-left: 2.5em; */
+    /* padding-bottom: 8%; */
+}
+
+.subscription__text_wrapper_descriptions {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 150%;
+    color: #333333;
+    margin-top: 1.5em;
+    /* margin-left: 60px; */
+}
+
+.subscription__text_wrapper_button {
+    height: 15%;
+    margin-top: 7vh;
+    /* margin-left: 60px; */
+} 
+
+.subscription__text_wrapper_button_lm {
+    width: 30%;
+    height: 2.5em;
+    padding: 0;
+    border-radius: 16px;
+    border-style: none;
+    background-color: #1749B3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 130%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.subscription__picture {
+    position: absolute;
+    right: 9vw;
+    border-radius: 32px;
+    height: 58vh;
+    width: 45vw;
+    margin-right: -1vw;
+    background-color: #000000;
+    text-align: center;
+    
+}
+
+.before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+.subscription__picture img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#spotify {
+    background-color: #18d860;
+}
+
+#youtube {
+    background-color: #E1DCEB;
+}
+
+
+
+
+
+
+
+

@@ -19,17 +19,23 @@
             <img src="images/logo.png" alt="logo" width="55px" height="55px">
             <div class="header__logo-text" href="">DiscountsOnServices</div>
         </div>
-        
         <div class="header__nav">
             <div class="header__nav-pages">
-                <a class="header__nav-link" href="">Subscriptions</a>
-                <a class="header__nav-link" href="">FAQ</a>
-                <a class="header__nav-link" href="">Support</a>
-                <a class="header__nav-link" href="">About</a>
+                <div class="header__nav-pages_dropdown">
+                    <button class="header__nav-pages_dropbtn header__nav-link">Subscriptions</button>
+                    <div class="header__nav-pages_dropdown-content">
+                        <a href="#">Netflix</a>
+                        <a href="#">YouTube Premium</a>
+                        <a href="#">Spotify</a>
+                    </div>
+                </div> 
+                <div class="header__nav-link" href="">FAQ</div>
+                <div class="header__nav-link" href="">Support</div>
+                <div class="header__nav-link" href="">About</div>
             </div>
             <div class="header__nav-socials">
                 <a class="header__nav-social-link" href="https://www.whatsapp.com/?lang=ru">
-                    <img src="images/whats_app_logo.png" width="20px" height="20px" alt="whats_app_logo">
+                    <img src="images/whats_app_logo.png" width="20px" height="20px" alt="whatsapp_logo">
                 </a>
                 <a class="header__nav-social-link" href="https://web.telegram.org/k/">
                     <img src="images/telegram_logo.png" width="20px" height="20px" alt="telegram_logo">
@@ -43,23 +49,94 @@
             <button class="header__button-login">Log in</button>
         </div>
     </div>
-
-    <div class="start__using">
-        <div class="start__using-text">
-            <div class="start__using-text--wrapper">
-                <div class="start__using-text--header">Start enjoying a benefit of up to 50%</div>
-                <div class="start__using-text--descriptions">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</div>
-                <div class="start__using-text--button">
-                    <button class="start__using-text--button--su">Start using</button>
+    <div class="start-using">
+        <div class="start-using__text">
+            <div class="start-using__text_wrapper">
+                <div class="start-using__text_title">Start enjoying a benefit of up to 50%</div>
+                <div class="start-using__text_descriptions">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</div>
+                <div class="start-using__text_button">
+                    <button class="start-using__text_button_su">Start using</button>
                 </div> 
             </div>   
         </div>
-        <div class="start__using-picture"></div>
+        <div class="start-using__picture">
+            <img src="./images/subscriptions_logo.png" alt="subscriptions_logo">
+        </div>
     </div>
+
+    <!-- <div class="choose-a-subscription">
+        <div class="subscription__title">Choose a subscription</div>
+        <div class="subscription__text">
+            <div class="subscription__text_wrapper">
+                <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
+                <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                <div class="subscription__text_wrapper_button">
+                    <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                </div> 
+            </div>   
+        </div>
+        <div class="subscription__picture">
+            <img src="./images/netflix_logo.png" alt="netflix_logo">
+        </div>  
+    </div> -->
+
+    <div class="choose-a-subscription">
+        <div class="subscription__title">Choose a subscription</div>
+
+        <div class="subscription__container">
+            <div class="subscription__text">
+                <div class="subscription__text_wrapper">
+                    <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
+                    <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                    <div class="subscription__text_wrapper_button">
+                        <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                    </div> 
+                </div>   
+            </div>
+            <div class="subscription__picture">
+                <span class="before"></span>
+                <img src="./images/netflix_logo.png" alt="netflix_logo">
+            </div> 
+        </div>  
+        
+        <div class="subscription__container">
+            <div class="subscription__text">
+                <div class="subscription__text_wrapper">
+                    <div class="subscription__text_wrapper_title">Spotify Premium</div>
+                    <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                    <div class="subscription__text_wrapper_button">
+                        <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                    </div> 
+                </div>   
+            </div>
+            <div class="subscription__picture"  id="spotify">
+                <span class="before"></span>
+                <img src="./images/spotify_logo.png" alt="spotify_logo">
+            </div> 
+        </div> 
+
+        <div class="subscription__container">
+            <div class="subscription__text">
+                <div class="subscription__text_wrapper">
+                    <div class="subscription__text_wrapper_title">YouTube Premium </div>
+                    <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                    <div class="subscription__text_wrapper_button">
+                        <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                    </div> 
+                </div>   
+            </div>
+            <div class="subscription__picture" id="youtube">
+                <span class="before"></span>
+                <img src="./images/youtube_logo.png" alt="youtube_logo">
+            </div> 
+        </div>
+    </div>
+
+
 
     
 </div>
-    
+
     <!-- <div class="background"></div> -->
 </body>
 </html>
