@@ -553,3 +553,133 @@
 
 
 
+
+.FAQ {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ__title {
+    margin-top: 15vh;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #171717;
+}
+
+.FAQ__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQ__container_question {
+    /* border: dotted red; */
+    width: 80vw;
+    height: 17vh;
+    margin-top: 3vh;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px;
+}
+
+
+.FAQ__container_tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 80vw;
+    height: 17vh;
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #171717;
+    box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px;
+    overflow: hidden;
+  }
+  .FAQ__container_tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .FAQ__container_tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    /* background: #16a085; */
+    font-weight: bold;
+    line-height: 3;
+    cursor: pointer;
+    margin-left: 1em;
+  }
+
+  .FAQ__container_tab-content {
+    max-height: 0;
+    overflow: hidden;
+    /* background: #1abc9c; */
+    -webkit-transition: max-height .35s;
+    -o-transition: max-height .35s;
+    transition: max-height .35s;
+  }
+
+  .FAQ__container_tab-content p {
+    margin: 1em 2em;
+  }
+
+  /* :checked */
+  .FAQ__container_tab input:checked ~ .FAQ__container_tab-content {
+    max-height: 100vh;
+  }
+  
+  /* Icon */
+  .FAQ__container_tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+  }
+  .FAQ__container_tab input[type=checkbox] + label::after {
+    content: url(./images/vector.png);
+  }
+  .FAQ__container_tab input[type=radio] + label::after {
+    content: "\25BC";
+  }
+  .FAQ__container_tab input[type=checkbox]:checked + label::after {
+    transform: rotate(180deg);
+  }
+  .FAQ__container_tab input[type=radio]:checked + label::after {
+    transform: rotateX(180deg);
+  }
+
+
+  .FAQ__button {
+    margin-top: 7vh;
+    
+  }
+
+  .FAQ__button_support {
+    width: 22vw;
+    height: 8vh;
+    background: #333333;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 130%;
+    color: #FFFFFF;
+  }
