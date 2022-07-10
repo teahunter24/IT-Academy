@@ -14,62 +14,79 @@
 </head>
 
 <body>
-    <div class="background">
-        <header class="header">
-            <div class="header__logo">
-                <img src="images/logo.png" alt="logo" title="logo">
-                <div class="header__logo-text" href="">DiscountsOnServices</div>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" alt="logo" title="logo">
+            <div class="header__logo-text" href="">DiscountsOnServices</div>
+        </div>
+        <div class="header__nav">
+            <div class="header__nav-pages">
+                <div class="header__nav-pages_dropdown">
+                    <button class="header__nav-pages_dropbtn header__nav-link">Subscriptions</button>
+                    <div class="header__nav-pages_dropdown-content">
+                        <a href="./DOS_Netflix.html">Netflix</a>
+                        <a href="./DOS_YouTube.html">YouTube Premium</a>
+                        <a href="./DOS_Spotify.html">Spotify</a>
+                    </div>
+                </div> 
+                <div class="header__nav-link" href="">FAQ</div>
+                <div class="header__nav-link" href="">Support</div>
+                <div class="header__nav-link" href="">About</div>
             </div>
-            <div class="header__nav">
-                <div class="header__nav-pages">
-                    <div class="header__nav-pages_dropdown">
-                        <button class="header__nav-pages_dropbtn header__nav-link">Subscriptions</button>
-                        <div class="header__nav-pages_dropdown-content">
-                            <a href="#Netflix">Netflix</a>
-                            <a href="#YouTube_Premium">YouTube Premium</a>
-                            <a href="#Spotify">Spotify</a>
-                        </div>
-                    </div> 
-                    <div class="header__nav-link" href="">FAQ</div>
-                    <div class="header__nav-link" href="">Support</div>
-                    <div class="header__nav-link" href="">About</div>
-                </div>
-                <div class="header__nav-socials">
-                    <a class="header__nav-social-link" href="https://www.whatsapp.com/?lang=ru">
-                        <img src="images/whats_app_logo.png" width="20vw" height="20vw" alt="whatsapp_logo" title="whatsapp_logo">
-                    </a>
-                    <a class="header__nav-social-link" href="https://web.telegram.org/k/">
-                        <img src="images/telegram_logo.png" width="20vw" height="20vw" alt="telegram_logo" title="telegram_logo">
-                    </a>
-                </div>
-                <div class="header__nav-languages">
-                    <a class="header__nav-languages-link" href="">EN</a>
-                </div>
+            <div class="header__nav-socials">
+                <a class="header__nav-social-link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
+                    <img src="images/whats_app_logo.png" alt="whatsapp_logo" title="whatsapp_logo">
+                </a>
+                <a class="header__nav-social-link" href="https://web.telegram.org/k/" target="_blank">
+                    <img src="images/telegram_logo.png" alt="telegram_logo" title="telegram_logo">
+                </a>
             </div>
-            <div class="header__button">
-                <button class="header__button-login">Log in</button>
-            </div>
-        </header>
-
-
-        <div class="start-using">
-            <div class="start-using__text">
-                <div class="start-using__text_wrapper">
-                    <div class="start-using__text_title">Start enjoying a benefit of up to 50%</div>
-                    <div class="start-using__text_descriptions">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</div>
-                    <div class="start-using__text_button">
-                        <button class="start-using__text_button_su">Start using</button>
-                    </div> 
-                </div>   
-            </div>
-            <div class="start-using__picture">
-                <img src="./images/subscriptions_logo.png" alt="subscriptions_logo" title="subscriptions_logo">
+            <div class="header__nav-languages">
+                <a class="header__nav-languages-link" href="">EN</a>
             </div>
         </div>
+        <div class="header__button">
+            <button class="header__button-login">Log in</button>
+        </div>
+    </header>
 
-        <!-- <div class="choose-a-subscription">
-            <div class="subscription__title">Choose a subscription</div>
-            <div class="subscription__text">
+
+    <div class="start-using">
+        <div class="start-using__text">
+            <div class="start-using__text_wrapper">
+                <div class="start-using__text_title">Start enjoying a benefit of up to 50%</div>
+                <div class="start-using__text_descriptions">You have always wanted to get the same product at a special price for you, without haggling - and it is yours.</div>
+                <div class="start-using__text_button">
+                    <button class="start-using__text_button_su">Start using</button>
+                </div> 
+            </div>   
+        </div>
+        <div class="start-using__picture">
+            <img src="./images/subscriptions_logo.png" alt="subscriptions_logo" title="subscriptions_logo">
+        </div>
+    </div>
+
+    <!-- <div class="choose-a-subscription">
+        <div class="subscription__title">Choose a subscription</div>
+        <div class="subscription__text">
+            <div class="subscription__text_wrapper">
+                <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
+                <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                <div class="subscription__text_wrapper_button">
+                    <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                </div> 
+            </div>   
+        </div>
+        <div class="subscription__picture">
+            <img src="./images/netflix_logo.png" alt="netflix_logo">
+        </div>  
+    </div> -->
+
+    <div class="choose-a-subscription">
+        <div class="subscription__title">Choose a subscription</div>
+
+        <div class="subscription__container">
+            <div class="subscription__text" id="Netflix">
                 <div class="subscription__text_wrapper">
                     <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
                     <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
@@ -78,198 +95,179 @@
                     </div> 
                 </div>   
             </div>
-            <div class="subscription__picture">
-                <img src="./images/netflix_logo.png" alt="netflix_logo">
-            </div>  
-        </div> -->
-
-        <div class="choose-a-subscription">
-            <div class="subscription__title">Choose a subscription</div>
-
-            <div class="subscription__container">
-                <div class="subscription__text" id="Netflix">
-                    <div class="subscription__text_wrapper">
-                        <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
-                        <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
-                        <div class="subscription__text_wrapper_button">
-                            <button class="subscription__text_wrapper_button_lm">Learn more</button>
-                        </div> 
-                    </div>   
-                </div>
-                <div class="subscription__picture">
-                    <span class="before"></span>
-                    <img src="./images/netflix_logo.png" alt="netflix_logo" title="netflix_logo">
-                </div> 
-            </div>  
-            
-            <div class="subscription__container">
-                <div class="subscription__text" id="Spotify">
-                    <div class="subscription__text_wrapper">
-                        <div class="subscription__text_wrapper_title">Spotify Premium</div>
-                        <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
-                        <div class="subscription__text_wrapper_button">
-                            <button class="subscription__text_wrapper_button_lm">Learn more</button>
-                        </div> 
-                    </div>   
-                </div>
-                <div class="subscription__picture"  id="spotify">
-                    <span class="before"></span>
-                    <img src="./images/spotify_logo.png" alt="spotify_logo" title="spotify_logo">
-                </div> 
+            <div class="subscription__picture" id="netflix">
+                <span class="before"></span>
+                <img src="./images/netflix_logo.png" alt="netflix_logo" title="netflix_logo" id="netflix-picture">
             </div> 
-
-            <div class="subscription__container">
-                <div class="subscription__text" id="YouTube_Premium">
-                    <div class="subscription__text_wrapper">
-                        <div class="subscription__text_wrapper_title">YouTube Premium </div>
-                        <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
-                        <div class="subscription__text_wrapper_button">
-                            <button class="subscription__text_wrapper_button_lm">Learn more</button>
-                        </div> 
-                    </div>   
-                </div>
-                <div class="subscription__picture" id="youtube">
-                    <span class="before"></span>
-                    <img src="./images/youtube_logo.png" alt="youtube_logo" title="youtube_logo">
-                </div> 
-            </div>
         </div>
-
-
-        <div class="how-it-works">
-            <div class="hiw__title">How it works?</div>
-
-            <div class="hiw__container">
-                <div class="hiw__container_step">
-                    <div class="hiw__container_step_wrapper">
-                        <img src="./images/bell_illustration.png" alt="bell_illustration" title="bell_illustration">
-                    </div>
-                    <div class="hiw__container_step_title">Step 1</div>
-                    <div class="hiw__container_step_descriptions">Enter your account information</div>
-                </div>
-                <div class="hiw__container_step">
-                    <div class="hiw__container_step_wrapper">
-                        <img src="./images/chats_illustration.png" alt="chats_illustration" title="chats_illustration">
-                    </div>
-                    <div class="hiw__container_step_title">Step 2</div>
-                    <div class="hiw__container_step_descriptions">Select the desired subscription and plan</div>
-                </div>
-                <div class="hiw__container_step">
-                    <div class="hiw__container_step_wrapper">
-                        <img src="./images/successful_illustration.png" alt="successful_illustration" title="successful_illustration">
-                    </div>
-                    <div class="hiw__container_step_title"> Step 3</div>
-                    <div class="hiw__container_step_descriptions">Pay your bill 
-                        with PayPal</div>
-                </div>
+        
+        <div class="subscription__container">
+            <div class="subscription__text" id="Spotify">
+                <div class="subscription__text_wrapper">
+                    <div class="subscription__text_wrapper_title">Spotify Premium</div>
+                    <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                    <div class="subscription__text_wrapper_button">
+                        <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                    </div> 
+                </div>   
             </div>
+            <div class="subscription__picture"  id="spotify">
+                <span class="before"></span>
+                <img src="./images/spotify_logo.png" alt="spotify_logo" title="spotify_logo" id="spotify-picture">
+            </div> 
+        </div> 
 
-            <div class="hiw__container_invite-friends">
-                <div class="hiw__container_invite-friends_if">
-                    <div class="hiw__container_invite-friends_if_title">Invite friends</div>
-                    <div class="hiw__container_invite-friends_if_descriptions">Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from PAYPAL</div>
-                </div>
-
-                <div class="hiw__container_invite-friends_offer">
-                    <div class="hiw__container_invite-friends_offer_click">Click on the link</div>
-                    <div class="hiw__container_invite-friends_offer_discounts">
-                        <a href="https://t.me/DiscountsOnServices_bot?start=343964809" target="_blank" title="telegram_chat">discounts on services</a>
-                        <img src="./images/copy_logo.png" alt="copy_logo" title="copy_logo">
-                    </div>
-                </div>
+        <div class="subscription__container">
+            <div class="subscription__text" id="YouTube_Premium">
+                <div class="subscription__text_wrapper">
+                    <div class="subscription__text_wrapper_title">YouTube Premium </div>
+                    <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
+                    <div class="subscription__text_wrapper_button">
+                        <button class="subscription__text_wrapper_button_lm">Learn more</button>
+                    </div> 
+                </div>   
             </div>
+            <div class="subscription__picture" id="youtube">
+                <span class="before"></span>
+                <img src="./images/youtube_logo.png" alt="youtube_logo" title="youtube_logo" id="youtube_picture">
+            </div> 
         </div>
-
-        <div class="about-us">
-            <div class="about-us__title">About us</div>
-            <div class="about-us__container">
-                <div class="about-us__container_description">
-                    <img src="./images/logo.png" alt="logo" title="logo">
-                    <div class="about-us__container_description_text">
-                        We offer you a subscription to various media services at the best price.
-                        <br>
-                        <br>
-                        We have partnered with several companies to help you find the best prices for your media subscriptions and provide you with the best prices for the Premium subscriptions you want.
-                        <br>
-                        <br>
-                        <b>It's simple, fast and economical.</b>
-                    </div>
-                </div>
-                <div class="about-us__container_picture">
-                    <img src="./images/about-us_logo.png" alt="about-us_logo" title="about-us_logo">
-                </div>
-            </div>
-        </div>
-
-        <div class="FAQ">
-            <div class="FAQ__title">FAQ</div>
-            <div class="FAQ__container">
-
-                <!-- <div class="FAQ__container_question"></div>
-                <div class="FAQ__container_question"></div>
-                <div class="FAQ__container_question"></div>
-                <div class="FAQ__container_question"></div>
-                <div class="FAQ__container_question">
-                    <details>
-                        <summary>How to pay?</summary>
-                        Payment options we currently have: PayPal, Bitcoin.
-                    </details>
-                </div> -->
-
-                <div class="FAQ__container_tab">
-                    <input id="FAQ__container_tab-one" type="checkbox" name="tabs">
-                    <label for="FAQ__container_tab-one">The set time has passed, but the invoice has not yet arrived, what should I do?</label>
-                    <div class="FAQ__container_tab-content">
-                    <p>The set time has passed, but the invoice has not yet arrived, what should I do?</p>
-                    </div>
-                </div>
-                <div class="FAQ__container_tab">
-                    <input id="FAQ__container_tab-two" type="checkbox" name="tabs">
-                    <label for="FAQ__container_tab-two">Can I change my Netflix account email and password after purchase?</label>
-                    <div class="FAQ__container_tab-content">
-                    <p>Can I change my Netflix account email and password after purchase?</p>
-                    </div>
-                </div>
-                <div class="FAQ__container_tab">
-                    <input id="FAQ__container_tab-three" type="checkbox" name="tabs">
-                    <label for="FAQ__container_tab-three">Can I add a phone number for password recovery?</label>
-                    <div class="FAQ__container_tab-content">
-                    <p>Can I add a phone number for password recovery?</p>
-                    </div>
-                </div>
-                <div class="FAQ__container_tab">
-                    <input id="FAQ__container_tab-four" type="checkbox" name="tabs">
-                    <label for="FAQ__container_tab-four">How soon will I receive the account information I ordered?</label>
-                    <div class="FAQ__container_tab-content">
-                    <p>How soon will I receive the account information I ordered?</p>
-                    </div>
-                </div>
-                <div class="FAQ__container_tab">
-                    <input id="FAQ__container_tab-five" type="checkbox" name="tabs">
-                    <label for="FAQ__container_tab-five">How to pay?</label>
-                    <div class="FAQ__container_tab-content">
-                    <p>Payment options we currently have: PayPal, Bitcoin.</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="FAQ__button">
-                <button class="FAQ__button_support">Support</button>
-            </div>
-        </div>
-
-        <div class="request">
-            <div class="request__container">
-                <div class="request__container_title">Request for an additional subscription that was not found here</div>
-                <div class="request__container_description">Disney, Amazon Prime, Microsoft Office, Microsoft Windows</div>
-            </div>
-
-            <div class="request__button">
-                <button class="request__button_r">Request</button>
-            </div>
-        </div>  
     </div>
+
+
+    <div class="how-it-works">
+        <div class="hiw__title">How it works?</div>
+
+        <div class="hiw__container">
+            <div class="hiw__container_step">
+                <div class="hiw__container_step_wrapper">
+                    <img src="./images/bell_illustration.png" alt="bell_illustration" title="bell_illustration">
+                </div>
+                <div class="hiw__container_step_title">Step 1</div>
+                <div class="hiw__container_step_descriptions">Enter your account information</div>
+            </div>
+            <div class="hiw__container_step">
+                <div class="hiw__container_step_wrapper">
+                    <img src="./images/chats_illustration.png" alt="chats_illustration" title="chats_illustration">
+                </div>
+                <div class="hiw__container_step_title">Step 2</div>
+                <div class="hiw__container_step_descriptions">Select the desired subscription and plan</div>
+            </div>
+            <div class="hiw__container_step">
+                <div class="hiw__container_step_wrapper">
+                    <img src="./images/successful_illustration.png" alt="successful_illustration" title="successful_illustration">
+                </div>
+                <div class="hiw__container_step_title"> Step 3</div>
+                <div class="hiw__container_step_descriptions">Pay your bill 
+                    with PayPal</div>
+            </div>
+        </div>
+
+        <div class="hiw__container_invite-friends">
+            <div class="hiw__container_invite-friends_if">
+                <div class="hiw__container_invite-friends_if_title">Invite friends</div>
+                <div class="hiw__container_invite-friends_if_descriptions">Starting today up to 50% for NETFLIX, YOUTUBE, SPOTIFY subscriptions with a secure payment from PAYPAL</div>
+            </div>
+
+            <div class="hiw__container_invite-friends_offer">
+                <div class="hiw__container_invite-friends_offer_click">Click on the link</div>
+                <div class="hiw__container_invite-friends_offer_discounts">
+                    <a href="https://t.me/DiscountsOnServices_bot?start=343964809" target="_blank" title="telegram_chat">discounts on services</a>
+                    <img src="./images/copy_logo.png" alt="copy_logo" title="copy_logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-us">
+        <div class="about-us__title">About us</div>
+        <div class="about-us__container">
+            <div class="about-us__container_description">
+                <img src="./images/logo.png" alt="logo" title="logo">
+                <div class="about-us__container_description_text">
+                    We offer you a subscription to various media services at the best price.
+                    <br>
+                    <br>
+                    We have partnered with several companies to help you find the best prices for your media subscriptions and provide you with the best prices for the Premium subscriptions you want.
+                    <br>
+                    <br>
+                    <b>It's simple, fast and economical.</b>
+                </div>
+            </div>
+            <div class="about-us__container_picture">
+                <img src="./images/about-us_logo.png" alt="about-us_logo" title="about-us_logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="FAQ">
+        <div class="FAQ__title">FAQ</div>
+        <div class="FAQ__container">
+
+            <!-- <div class="FAQ__container_question"></div>
+            <div class="FAQ__container_question"></div>
+            <div class="FAQ__container_question"></div>
+            <div class="FAQ__container_question"></div>
+            <div class="FAQ__container_question">
+                <details>
+                    <summary>How to pay?</summary>
+                    Payment options we currently have: PayPal, Bitcoin.
+                </details>
+            </div> -->
+
+            <div class="FAQ__container_tab">
+                <input id="FAQ__container_tab-one" type="checkbox" name="tabs">
+                <label for="FAQ__container_tab-one">The set time has passed, but the invoice has not yet arrived, what should I do?</label>
+                <div class="FAQ__container_tab-content">
+                <p>The set time has passed, but the invoice has not yet arrived, what should I do?</p>
+                </div>
+            </div>
+            <div class="FAQ__container_tab">
+                <input id="FAQ__container_tab-two" type="checkbox" name="tabs">
+                <label for="FAQ__container_tab-two">Can I change my Netflix account email and password after purchase?</label>
+                <div class="FAQ__container_tab-content">
+                <p>Can I change my Netflix account email and password after purchase?</p>
+                </div>
+            </div>
+            <div class="FAQ__container_tab">
+                <input id="FAQ__container_tab-three" type="checkbox" name="tabs">
+                <label for="FAQ__container_tab-three">Can I add a phone number for password recovery?</label>
+                <div class="FAQ__container_tab-content">
+                <p>Can I add a phone number for password recovery?</p>
+                </div>
+            </div>
+            <div class="FAQ__container_tab">
+                <input id="FAQ__container_tab-four" type="checkbox" name="tabs">
+                <label for="FAQ__container_tab-four">How soon will I receive the account information I ordered?</label>
+                <div class="FAQ__container_tab-content">
+                <p>How soon will I receive the account information I ordered?</p>
+                </div>
+            </div>
+            <div class="FAQ__container_tab">
+                <input id="FAQ__container_tab-five" type="checkbox" name="tabs">
+                <label for="FAQ__container_tab-five">How to pay?</label>
+                <div class="FAQ__container_tab-content">
+                <p>Payment options we currently have: PayPal, Bitcoin.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="FAQ__button">
+            <button class="FAQ__button_support">Support</button>
+        </div>
+    </div>
+
+    <div class="request">
+        <div class="request__container">
+            <div class="request__container_title">Request for an additional subscription that was not found here</div>
+            <div class="request__container_description">Disney, Amazon Prime, Microsoft Office, Microsoft Windows</div>
+        </div>
+
+        <div class="request__button">
+            <button class="request__button_r">Request</button>
+        </div>
+    </div>  
 
     <footer>
         <div class="footer__container">
@@ -284,9 +282,9 @@
             <div class="footer__subscriptions">
                 <div class="footer__subscriptions_title">Subscriptions</div>   
                 <div class="footer__subscriptions_list">
-                    <a class="footer__subscriptions_list" href="">Netflix</a>
-                    <a class="footer__subscriptions_list" href="">YouTube Premium</a>
-                    <a class="footer__subscriptions_list" href="">Spotify</a>
+                    <a class="footer__subscriptions_list" href="./DOS_Netflix.html">Netflix</a>
+                    <a class="footer__subscriptions_list" href="./DOS_YouTube.html">YouTube Premium</a>
+                    <a class="footer__subscriptions_list" href="./DOS_Spotify.html">Spotify</a>
                 </div>
             </div>
     
@@ -301,10 +299,10 @@
     
             <div class="footer__contacts">
                 <div class="footer__contacts_social">
-                    <a class="footer__contacts_social-link" href="https://www.whatsapp.com/?lang=ru">
+                    <a class="footer__contacts_social-link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
                         <img src="images/whats_app_logoF.png" width="20px" height="20px" alt="whatsapp_logo" title="whatsapp_logo">
                     </a>
-                    <a class="footer__contacts_social-link" href="https://web.telegram.org/k/">
+                    <a class="footer__contacts_social-link" href="https://web.telegram.org/k/" target="_blank">
                         <img src="images/telegram_logoF.png" width="20px" height="20px" alt="telegram_logo" title="telegram_logo">
                     </a>
                 </div>
