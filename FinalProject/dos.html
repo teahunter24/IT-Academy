@@ -22,16 +22,21 @@
         <div class="header__nav">
             <div class="header__nav-pages">
                 <div class="header__nav-pages_dropdown">
-                    <button class="header__nav-pages_dropbtn header__nav-link">Subscriptions</button>
+                    <div class="header__nav-pages_dropdown_title">
+                        <div class="header__nav-pages_dropdown_title_subscriptions">
+                            <button class="header__nav-pages_dropbtn header__nav-link" id="no-margin">Subscriptions</button>
+                        </div>
+                        <div class="header__nav-pages_dropdown_title_arrow"><img src="./images/arrow.png" alt="arrow"></div>
+                    </div> 
                     <div class="header__nav-pages_dropdown-content">
                         <a href="./DOS_Netflix.html">Netflix</a>
                         <a href="./DOS_YouTube.html">YouTube Premium</a>
                         <a href="./DOS_Spotify.html">Spotify</a>
                     </div>
                 </div> 
-                <div class="header__nav-link" href="">FAQ</div>
-                <div class="header__nav-link" href="">Support</div>
-                <div class="header__nav-link" href="">About</div>
+                <div class="header__nav-link"><a href="./DOS_FAQ.html">FAQ</a></div>
+                <div class="header__nav-link"><a href="#FAQ">Support</a></div>
+                <div class="header__nav-link"><a href="#About-us">About</a></div>
             </div>
             <div class="header__nav-socials">
                 <a class="header__nav-social-link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
@@ -41,9 +46,25 @@
                     <img src="images/telegram_logo.png" alt="telegram_logo" title="telegram_logo">
                 </a>
             </div>
-            <div class="header__nav-languages">
+
+            <!-- <div class="header__nav-languages">
                 <a class="header__nav-languages-link" href="">EN</a>
+            </div> -->
+
+            <div class="header__nav-pages_dropdown">
+                <div class="header__nav-pages_dropdown_title">
+                    <div class="header__nav-pages_dropdown_title_subscriptions">
+                        <button class="header__nav-pages_dropbtn header__nav-link" id="no-margin">EN</button>
+                    </div>
+                    <div class="header__nav-pages_dropdown_title_arrow" id="no-margin"><img src="./images/arrow.png" alt="arrow"></div>
+                </div> 
+                <div class="header__nav-pages_dropdown-content">
+                    <a href="">English</a>
+                    <a href="">Українська</a>
+                    <a href="">Русский</a>
+                </div>
             </div>
+
         </div>
         <div class="header__button">
             <button class="header__button-login">Log in</button>
@@ -65,22 +86,6 @@
             <img src="./images/subscriptions_logo.png" alt="subscriptions_logo" title="subscriptions_logo">
         </div>
     </div>
-
-    <!-- <div class="choose-a-subscription">
-        <div class="subscription__title">Choose a subscription</div>
-        <div class="subscription__text">
-            <div class="subscription__text_wrapper">
-                <div class="subscription__text_wrapper_title">Netflix subscription rates</div>
-                <div class="subscription__text_wrapper_descriptions">The constant contributes to the task of the same and thus the intended features and the set relation to the check and set also.</div>
-                <div class="subscription__text_wrapper_button">
-                    <button class="subscription__text_wrapper_button_lm">Learn more</button>
-                </div> 
-            </div>   
-        </div>
-        <div class="subscription__picture">
-            <img src="./images/netflix_logo.png" alt="netflix_logo">
-        </div>  
-    </div> -->
 
     <div class="choose-a-subscription">
         <div class="subscription__title">Choose a subscription</div>
@@ -179,7 +184,7 @@
         </div>
     </div>
 
-    <div class="about-us">
+    <div class="about-us" id="About-us">
         <div class="about-us__title">About us</div>
         <div class="about-us__container">
             <div class="about-us__container_description">
@@ -200,21 +205,9 @@
         </div>
     </div>
 
-    <div class="FAQ">
+    <div class="FAQ" id="FAQ">
         <div class="FAQ__title">FAQ</div>
         <div class="FAQ__container">
-
-            <!-- <div class="FAQ__container_question"></div>
-            <div class="FAQ__container_question"></div>
-            <div class="FAQ__container_question"></div>
-            <div class="FAQ__container_question"></div>
-            <div class="FAQ__container_question">
-                <details>
-                    <summary>How to pay?</summary>
-                    Payment options we currently have: PayPal, Bitcoin.
-                </details>
-            </div> -->
-
             <div class="FAQ__container_tab">
                 <input id="FAQ__container_tab-one" type="checkbox" name="tabs">
                 <label for="FAQ__container_tab-one">The set time has passed, but the invoice has not yet arrived, what should I do?</label>
@@ -291,9 +284,9 @@
             <div class="footer__navigation">
                 <div class="footer__navigation_title">Site navigation</div>   
                 <div class="footer__navigation_list">
-                    <a class="footer__navigation_list" href="">About</a>
-                    <a class="footer__navigation_list" href="">FAQ</a>
-                    <a class="footer__navigation_list" href="">Support</a>
+                    <a class="footer__navigation_list" href="#About-us">About</a>
+                    <a class="footer__navigation_list" href="./DOS_FAQ.html">FAQ</a>
+                    <a class="footer__navigation_list" href="#FAQ">Support</a>
                 </div>
             </div>
     
