@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('./Fonts/GothamPro.eot');
+    src: url('./Fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/GothamPro.woff') format('woff'),
+    url('./Fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('GothamPro-Bold.eot');
+    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('GothamPro-Bold.woff') format('woff'),
+    url('GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gotham Pro Regular';
+    color:#333333;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ECF3FB;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    left: 0px;
+    top: 0px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 6vw;
+}
+
+.header__logo img {
+    width: 8vw;
+}
+
+.header__menu-close {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 50%;
+    margin-right: 6vw;
+    background-color: #1749B3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__menu-close_icon img {
+    width: 3vw;
+    height: 3vw;
+}
+
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 14vh auto 10vh auto;
+}
+
+.menu__container {
+    background-color: #FFFFFF;
+    width: 85vw;
+    /* height: 85vw; */
+    margin: 2vh auto 2vh auto;
+    box-shadow: 0px 12px 28px rgba(177, 177, 177, 0.2);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__container_wrapper {
+    /* border: solid red; */
+    width: 75vw;
+    margin: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+/* .menu__container_wrapper a {
+    border: solid blue;
+    height: 10vh;
+} */
+
+.menu__container_wrapper_chapter {
+    /* border: dotted green; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vw;
+    cursor: pointer;
+}
+
+.menu__container_wrapper_chapter:hover {
+    background-color: #F7F7F7;
+    border-radius: 8px;
+}
+
+.menu__container_wrapper_chapter_icon {
+    margin: 2vw 0 2vw 5vw;
+}
+
+.menu__container_wrapper_chapter_title a{
+    font-size: 5vw;
+    margin-left: 5vw;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.button__b {
+    width: 85vw;
+    height: 10vw;
+    background: #ECF3FB;
+    border-radius: 12px;
+    border: solid 2px #1749B3;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 130%;
+    color: #1749B3;
+    cursor: pointer;
+}
+
+.button__b:hover {
+    color: #FFFFFF;
+    background-color: #1749B3;
+}
+
+.button__b:active {
+    color: #FFFFFF;
+    background-color: #1749B3;
+}
+
+
+
+.contacts-language {
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 8vh;
+    font-size: 3vw;
+}
+
+.contacts-language__socials-link {
+    margin-right: 1vw;
+}
+
+.contacts-language__socials-link img {
+    width: 5vw;
+}
+
+
+
+/* Выпадающий список языка */
+.contacts-language__pages_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.contacts-language__pages_dropdown_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#no-margin {
+    margin: 0;
+}
+
+.contacts-language__pages_dropdown_title_arrow {
+    margin-right: 3vw;
+    cursor: pointer;
+}
+
+/* Кнопка выпадающего списка */
+.contacts-language__pages_dropbtn {
+    border: none;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #333333;
+}
+  
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.contacts-language__pages_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 17vw;
+    box-shadow: 0px 20px 48px rgba(177, 177, 177, 0.4);
+    z-index: 1;
+    border-radius: 16px; 
+}
+  
+  /* Ссылки внутри выпадающего списка */
+.contacts-language__pages_dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+  /* Изменение цвета выпадающих ссылок при наведении курсора */
+.contacts-language__pages_dropdown-content a:hover {
+    color: #1749B3;
+}
+  
+  /* Показать выпадающее меню при наведении курсора */
+.contacts-language__pages_dropdown:hover .contacts-language__pages_dropdown-content {
+    display: block;
+}
+  
+  /* Изменение цвета текста при отображении содержимого раскрывающегося списка */
+.contacts-language__pages_dropdown:hover .contacts-language__pages_dropbtn {
+    color: #1749B3;
+}
