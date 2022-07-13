@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+
+    /* КОЛОНКИ */
+    /* grid-template-columns: 20% auto auto 70px; */
+
+    /* fr - часть */
+    grid-template-columns: 70px 1fr 2fr;
+
+    /* minmax - минимальная и максимальная ширина колонки */
+    /* grid-template-columns: minmax(200px auto) minmax(100px 300px); */
+
+    /* repeat - повтор одинаковых колонок */
+    /* grid-template-columns: repeat(5, 70px); */
+
+    /* gap - разрыв, пробел, отступ */
+    grid-gap: 10px
+    
+
+    /* СТРОКИ */
+    /* grid-template-rows: 100px 200px; */
+}
+
+
+.grid-item {
+    padding: 10px;
+    background-color: blanchedalmond;
+    /* border: solid blue; */
+    border-radius: 5px;
+}

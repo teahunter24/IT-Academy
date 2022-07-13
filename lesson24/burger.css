@@ -1,0 +1,68 @@
+.body {
+    margin: 0;
+}
+
+.header {
+    background-color: cornflowerblue;
+    /* position: relative;
+    overflow: hidden; */
+    padding-left: -5px;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 1em;
+}
+
+.nav a {
+    display: block;
+    background-color: #86d386;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: red;
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.burger img {
+    height: 1em;
+}
+
+.container {
+    background-color: silver;
+    padding: 5px 10px;
+}
+
+/* изменение для "не мобильного" экрана */
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav {
+        display: inline-block;
+        position: static;
+        top: unset;
+        width: auto;
+    }
+
+    .nav a {
+        display: inline-block;
+        background-color: unset;
+    }
+}
