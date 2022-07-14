@@ -241,7 +241,7 @@ body {
 
 .start-using__text_button_su {
     width: 70vw;
-    height: 10vh;
+    height: 8vh;
     padding: 0;
     border-radius: 16px;
     border-style: none;
@@ -270,27 +270,29 @@ body {
     border-radius: 32px;
 }
 
-/* .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-} */
+
+
+
 
 .subscription__container {
     display: flex;
+    flex-direction: column-reverse;
     margin-top: 2vh;
     position: relative;
-    width: 85%;
+    width: 85vw;
     margin-left: auto;
     margin-right: auto;
+    background-color: #FFFFFF;
+    /* height: 58vh; */
+    border-radius: 32px;
 }
 
 .subscription__title {
-    margin-top: 5vh;
+    margin-top: 15vh;
     margin-bottom: 1em;
     text-align: center;
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #171717;
 }
@@ -299,77 +301,61 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
-    width: 82vw;
-    /* height: 58vh; */
+    width: 85vw;
     border-radius: 32px;
 }
 
 .subscription__text_wrapper {
-    /* margin-left: 9%;
-    margin-right: 18%; */
-    width: 30vw;
-    /* height: 58vh; */
-    margin: 4vw 0 5vw 4vw;
-    /* margin-top: 10vh;
-    margin-left: 4vw; */
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .subscription__text_wrapper_title {
-    font-weight: 400;
-    font-size: 2.5vw;
+    font-weight: 700;
+    font-size: 5.5vw;
     line-height: 140%;
     color: #171717;
-    /* margin-top: 2.5em; */
-    /* margin-left: 2.5em; */
-    /* padding-bottom: 8%; */
 }
 
 .subscription__text_wrapper_descriptions {
     font-weight: 400;
-    font-size: 1.5vw;
-    text-align: justify;
+    font-size: 4vw;
     line-height: 150%;
     color: #333333;
     margin-top: 1.5em;
-    /* margin-left: 60px; */
 }
 
 .subscription__text_wrapper_button {
     height: 15%;
     margin-top: 7vh;
-    /* margin-left: 60px; */
 } 
 
 .subscription__text_wrapper_button_lm {
-    width: 12vw;
-    height: 4vw;
+    width: 70vw;
+    height: 8vh;
     padding: 0;
     border-radius: 16px;
     border-style: none;
     background-color: #1749B3;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 4vw;
     line-height: 130%;
     cursor: pointer;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
 }
 
 .subscription__picture {
-    position: absolute;
-    right: 0;
     border-radius: 32px;
-    width: 45vw;
-    height: 100%;
-    /* margin-right: -1vw; */
-    
+    width: 100%;
+    height: 30vh;
     text-align: center;
-    
+    min-height: 40vh;
 }
 
 .before {
@@ -389,7 +375,7 @@ body {
 }
 
 #netflix-picture {
-    width: 15vw;
+    width: 20vw;
 }
 
 #spotify {
@@ -398,7 +384,7 @@ body {
 }
 
 #spotify-picture {
-    width: 38vw;
+    width: 45vw;
 }
 
 #youtube {
@@ -406,8 +392,9 @@ body {
 }
 
 #youtube_picture {
-    width: 33vw;
+    width: 45vw;
 }
+
 
 
 
@@ -418,73 +405,66 @@ body {
     margin-bottom: 1em;
     text-align: center;
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #171717;
 }
 
 .hiw__container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* border-style: dashed;
-    border-color: red; */
+    flex-direction: column;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    
-    width: 82vw;
-    height: 50vh;
+    width: 85vw;
 }
 
 .hiw__container_step {
-    /* border-style: dotted;
-    border-color: blue; */
-    width: 26vw;
-    height: 50vh;
+    width: 85vw;
+    /* height: 50vh; */
     background-color: #FFFFFF;
     box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
     border-radius: 32px;
     padding-right: 0;
+    margin: 0.7em;
 }
 
 .hiw__container_step_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    
+    margin: 1em;
 }
 
 .hiw__container_step img {
     position: absolute;
-    width: 15vw;
-    /* left: 10vw; */
+    width: 25vw;
 }
 
 .hiw__container_step_title {
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 5vw;
     line-height: 140%;
     color: #171717;
-    margin-left: 3.5vw;
-    margin-top: 25vh;
+    margin-left: 4vw;
+    margin-top: 10vw;
 }
 
 .hiw__container_step_descriptions {
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 4vw;
     line-height: 150%;
     color: #333333;
-    margin-left: 3.5vw;
-    margin-top: 5vh;
-    width: 17vw;
+    margin: 10vw 13vw 4vh 4vw;
 }
+
+
 
 .hiw__container_invite-friends {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    width: 82vw;
+    width: 85vw;
     /* height: 35vh; */
     margin-top: 3.5vh;
     margin-left: auto;
@@ -497,16 +477,12 @@ body {
 }
 
 .hiw__container_invite-friends_if {
-    width: 42%;
-    height: 100%;
-    /* border-style: dashed;
-    border-color: red; */
-    margin-left: 6%;
+    margin-left: 8vw;
 }
 
 .hiw__container_invite-friends_if_title {
     font-weight: 400;
-    font-size: 2.5vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #FFFFFF;
     margin-top: 8vh;
@@ -514,16 +490,16 @@ body {
 
 .hiw__container_invite-friends_if_descriptions {
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 4vw;
     line-height: 150%;
     color: #FFFFFF;
-    margin: 5vh 0;
+    margin: 4vw 9vw 5vw 0;
 }
 
 .hiw__container_invite-friends_offer {
-    width: 40%;
-    height: 10vw;
-    margin-right: 6%;
+    width: 70vw;
+    height: 25vw;
+    margin: 6vw auto 4vw auto;
     background: #F1F4F8;
     border-radius: 16px;
     display: flex;
@@ -535,7 +511,7 @@ body {
 .hiw__container_invite-friends_offer_click {
     /* height: 40%; */
     font-weight: 400;
-    font-size: 1.8vw;
+    font-size: 6vw;
     line-height: 140%;
     text-align: center;
     color: #171717;
@@ -549,7 +525,7 @@ body {
 
 .hiw__container_invite-friends_offer_discounts a{
     font-weight: 400;
-    font-size: 1.8vw;
+    font-size: 3.5vw;
     line-height: 150%;
     text-align: center;
     text-decoration-line: underline;
@@ -567,7 +543,7 @@ body {
     margin-bottom: 1em;
     text-align: center;
     font-weight: 700;
-    font-size: 2.5vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #171717;
 }
@@ -576,12 +552,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column-reverse;
 }
 
 .about-us__container_description {
-    width: 40vw;
+    width: 85vw;
     /* height: 87vh; */
-    margin: 0 1vh;
+    margin-top: 2vh;
     /* padding-left: 7vw; */
     background: #FFFFFF;
     box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2);
@@ -589,34 +566,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-self: stretch;
 }
 
 .about-us__container_description img {
-    width: 10vw;
-    margin-left: 5vw;
+    width: 15vw;
+    margin: 5vw 5vw 0 5vw;
     /* height: 10vh; */
 }
 
 .about-us__container_description_text {
-    width: 32vw;
+    /* width: 32vw; */
     margin: 5vh 5vw;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 4.5vw;
     line-height: 150%;
     color: #333333;
 }
 
 .about-us__container_picture {
-    width: 40vw;
+    width: 85vw;
     /* height: 85vh; */
-    margin: 0 1vh;
     box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
     border-radius: 32px;
 }
 
 .about-us__container_picture img {
-    width: 40vw;
+    width: 85vw;
     /* height: 85vh; */
     display: block;
     margin: auto;
@@ -635,10 +610,10 @@ body {
 
 .FAQ__title {
     margin-top: 15vh;
-    /* margin-bottom: 1em; */
+    margin-bottom: 1em;
     text-align: center;
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #171717;
 }
@@ -664,14 +639,14 @@ body {
 .FAQ__container_tab {
     position: relative;
     margin-bottom: 1px;
-    width: 80vw;
+    width: 85vw;
     height: auto;
     margin-top: 3vh;
     margin-left: auto;
     margin-right: auto;
     background: #FFFFFF;
     font-weight: 400;
-    font-size: 1.7vw;
+    font-size: 4vw;
     line-height: 150%;
     color: #171717;
     box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
@@ -683,6 +658,8 @@ body {
     position: absolute;
     opacity: 0;
     z-index: -1;
+    margin-left: 2em;
+    width: 80%;
   }
   .FAQ__container_tab label {
     position: relative;
@@ -690,9 +667,9 @@ body {
     padding: 0 0 0 1em;
     /* background: #16a085; */
     font-weight: bold;
-    line-height: 3;
+    line-height: 150%;
     cursor: pointer;
-    margin-left: 1em;
+    margin: 2em 1em 2em 1em;
   }
 
   .FAQ__container_tab-content {
@@ -729,6 +706,7 @@ body {
   }
   .FAQ__container_tab input[type=checkbox] + label::after {
     content: url(./images/vector.png);
+    /* margin: 0.1em; */
   }
   .FAQ__container_tab input[type=radio] + label::after {
     content: "\25BC";
@@ -742,17 +720,17 @@ body {
 
 
   .FAQ__button {
-    margin-top: 7vh;
+    margin-top: 5vh;
   }
 
   .FAQ__button_support {
-    width: 20vw;
-    height: 5vw;
+    width: 60vw;
+    height: 8vh;
     background: #333333;
     border-radius: 16px;
     border-style: none;
     font-weight: 700;
-    font-size: 1.7vw;
+    font-size: 4vw;
     line-height: 130%;
     color: #FFFFFF;
     cursor: pointer;
@@ -764,10 +742,11 @@ body {
 
   .request {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 82vw;
-    height: 15vw;
+    width: 85vw;
+    /* height: 15vw; */
     margin: 20vh auto 0 auto;
     background-color: #1749B3;
     box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2), 0px 4px 24px rgba(213, 216, 221, 0.2), 0px 12px 28px rgba(244, 245, 245, 0.2);
@@ -780,7 +759,7 @@ body {
 
   .request__container_title {
     font-weight: 700;
-    font-size: 1.7vw;
+    font-size: 6vw;
     line-height: 140%;
     color: #FFFFFF;
   }
@@ -788,19 +767,20 @@ body {
   .request__container_description {
     margin-top: 4vh;
     font-weight: 400;
-    font-size: 1.5vw;
+    font-size: 4vw;
     line-height: 150%;
     color: #FFFFFF;
   }
 
   .request__button_r {
     margin-right: 4vw;
-    width: 18vw;
+    width: 70vw;
     height: 8vh;
+    margin: 4vw auto 4vw auto;
     border-style: none;
     border-radius: 16px;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 4vw;
     line-height: 130%;
     color: #171717;
     cursor: pointer;
