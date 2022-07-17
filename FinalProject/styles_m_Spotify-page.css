@@ -1,0 +1,21 @@
+@import url("./styles_m_Netflix-page.css");
+
+/* SPOTIFY PAGE */
+#spotify-flex {
+    display: flex;
+    flex-direction: row;
+    width: 80vw !important;
+}
+
+#spotify-invisible {
+    /* position: absolute; */
+}
+
+.plan__options_card_wrapper-spotify {
+    /* position: relative;
+    top: 11vw; */
+}
+
+#spotify-price {
+    margin-top: 35vw;
+}

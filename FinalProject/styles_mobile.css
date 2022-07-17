@@ -28,6 +28,16 @@ body {
     background-color: #ECF3FB;
 }
 
+.caption {
+    margin-top: 15vh;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3.5vw;
+    line-height: 140%;
+    color: #171717;
+}
+
 .header {
     position: absolute;
     width: 100%;
@@ -511,7 +521,7 @@ body {
 .hiw__container_invite-friends_offer_click {
     /* height: 40%; */
     font-weight: 400;
-    font-size: 6vw;
+    font-size: 4.5vw;
     line-height: 140%;
     text-align: center;
     color: #171717;

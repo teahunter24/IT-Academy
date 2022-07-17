@@ -1,0 +1,172 @@
+@import url("./styles_mobile.css");
+
+
+@font-face {
+    font-family: 'Gotham Pro Regular';
+    src: url('./Fonts/GothamPro.eot');
+    src: url('./Fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/GothamPro.woff') format('woff'),
+    url('./Fonts/GothamPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: url('GothamPro-Bold.eot');
+    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('GothamPro-Bold.woff') format('woff'),
+    url('GothamPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Gotham Pro Regular';
+    color:#333333;
+    text-decoration: none;
+}
+
+body {
+    background-color: #ECF3FB;
+}
+
+/* NETFLIX PAGE */
+.plan__title {
+    margin-top: 20vh;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 140%;
+    color: #171717;
+}
+
+.plan__description {
+    margin-top: 3vh;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 150%;
+    color: #333333;
+}
+
+.plan__buttons {
+    text-align: center;
+    margin-top: 6vh;
+    display: flex;
+    justify-content: center;
+}
+
+.button-n {
+    width: 42.5vw;
+    height: 8vh;
+    font-size: 4vw;
+    background: #ECF3FB;
+    border-style: solid;
+    border-color: #1749B3;
+    cursor: pointer;
+}
+
+.plan__buttons_6m {
+    border-radius: 12px 0px 0px 12px;
+    border-right-width: 1px;
+}
+
+.plan__buttons_12m {
+    border-radius: 0px 12px 12px 0px;
+}
+
+.button-n:focus {
+    background-color: #1749B3;
+    color: #FFFFFF;
+}
+
+.button-n:hover {
+    background-color: #1749B3;
+    color: #FFFFFF;
+}
+
+.plan__options {
+    width: 82vw;
+    height: fit-content;
+    margin: 5vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plan__options_card {
+    width: 85vw;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 28px rgba(244, 245, 245, 0.2);
+    border-radius: 32px;
+    margin-top: 2vh;
+}
+
+.plan__options_card_title {
+    border-bottom: 1px solid #DBDBDB;
+    height: 25%;
+    font-weight: 700;
+    font-size: 5.5vw;
+    line-height: 140%;
+    color: #0F0F0F;
+    padding: 5vw 0 5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan__options_card_descriptions{
+    margin: 3.5vw 0 0.5vw 3.5vw;
+}
+
+.plan__options_card_descriptions_line {
+    font-size: 3.8vw;
+    margin-bottom: 1.5vh;
+}
+
+.plan__options_card_descriptions_line img {
+    width: 4vw;
+    margin-right: 1vw;
+    vertical-align: middle;
+}
+
+.plan__options_card_price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 130%;
+    text-align: center;
+    color: #0F0F0F;
+    margin: 10vw 0 4vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.plan__options_card_price_currency {
+    font-size: 6.5vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.plan__options_card_get-started {
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.plan__options_card_get-started_button {
+    font-size: 3.8vw;
+    color: #FFFFFF;
+    text-align: center;
+    width: 70vw;
+    height: 10vw;
+    background: #333333;
+    border-radius: 12px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.plan__options_card_get-started_button:hover {
+    background: #1749B3;
+}

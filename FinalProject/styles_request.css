@@ -1,0 +1,44 @@
+
+.request {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 82vw;
+height: 15vw;
+margin: 20vh auto 0 auto;
+background-color: #1749B3;
+box-shadow: 0px 4px 24px rgba(213, 216, 221, 0.2), 0px 4px 24px rgba(213, 216, 221, 0.2), 0px 12px 28px rgba(244, 245, 245, 0.2);
+border-radius: 32px;
+}
+
+.request__container {
+margin: 4vh 4vw;
+}
+
+.request__container_title {
+font-weight: 700;
+font-size: 1.7vw;
+line-height: 140%;
+color: #FFFFFF;
+}
+
+.request__container_description {
+margin-top: 4vh;
+font-weight: 400;
+font-size: 1.5vw;
+line-height: 150%;
+color: #FFFFFF;
+}
+
+.request__button_r {
+margin-right: 4vw;
+width: 18vw;
+height: 8vh;
+border-style: none;
+border-radius: 16px;
+font-weight: 700;
+font-size: 1.5vw;
+line-height: 130%;
+color: #171717;
+cursor: pointer;
+}

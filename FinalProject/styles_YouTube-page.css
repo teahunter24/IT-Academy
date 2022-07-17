@@ -1,0 +1,32 @@
+@import url("./styles_Netflix-page.css");
+
+
+/* YOUTUBE PREMIUM PAGE */
+.blue-text {
+    color: #1749B3;
+}
+
+#youtube-plan {
+    width: 53vw;
+}
+
+/* .plan__options_card_wrapper-youtube {
+    position: relative;
+    top: 9vw;
+} */
+
+.plan__options_card_descriptions_line_image {
+    /* height: 3em; */
+    /* width: fit-content; */
+}
+
+#youtube-flex {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 24vw;
+}
+
+#youtube-price {
+    margin-top: 10vw;
+}

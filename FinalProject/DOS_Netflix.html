@@ -6,22 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix DOS</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_Netflix-page.css"  media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles_m_Netflix-page.css"  media="(max-width: 640px)">
     <link rel="icon" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo.png" alt="logo" title="logo">
+            <div class="header__logo-text" href="">DiscountsOnServices</div>
+        </div>
+        <div class="header__nav">
+            <div class="header__nav-pages">
+                <div class="header__nav-pages_dropdown">
+                    <div class="header__nav-pages_dropdown_title">
+                        <div class="header__nav-pages_dropdown_title_subscriptions">
+                            <button class="header__nav-pages_dropbtn header__nav-link" id="no-margin">Subscriptions</button>
+                        </div>
+                        <div class="header__nav-pages_dropdown_title_arrow"><img src="./images/arrow.png" alt="arrow"></div>
+                    </div> 
+                    <div class="header__nav-pages_dropdown-content">
+                        <a href="./DOS_Netflix.html">Netflix</a>
+                        <a href="./DOS_YouTube.html">YouTube Premium</a>
+                        <a href="./DOS_Spotify.html">Spotify</a>
+                    </div>
+                </div> 
+                <div class="header__nav-link"><a href="./DOS_FAQ.html">FAQ</a></div>
+                <div class="header__nav-link"><a href="#FAQ">Support</a></div>
+                <div class="header__nav-link"><a href="#About-us">About</a></div>
+            </div>
+            <div class="header__nav-socials">
+                <a class="header__nav-social-link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
+                    <img src="images/whats_app_logo.png" alt="whatsapp_logo" title="whatsapp_logo">
+                </a>
+                <a class="header__nav-social-link" href="https://web.telegram.org/k/" target="_blank">
+                    <img src="images/telegram_logo.png" alt="telegram_logo" title="telegram_logo">
+                </a>
+            </div>
+            <div class="header__nav-pages_dropdown">
+                <div class="header__nav-pages_dropdown_title">
+                    <div class="header__nav-pages_dropdown_title_subscriptions">
+                        <button class="header__nav-pages_dropbtn header__nav-link" id="no-margin">EN</button>
+                    </div>
+                    <div class="header__nav-pages_dropdown_title_arrow" id="no-margin"><img src="./images/arrow.png" alt="arrow"></div>
+                </div> 
+                <div class="header__nav-pages_dropdown-content">
+                    <a href="">English</a>
+                    <a href="">Українська</a>
+                    <a href="">Русский</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__button">
+            <button class="header__button-login">Log in</button>
+        </div>
+        <a class="header__menu-icon" href="DOS_Menu.html">
+            <img src="./images/menu_icon.png" alt="menu_icon" title="menu_icon">
+        </a>
+    </header>
 
     <div class="plan">
         <div class="plan__title">Choose a Netflix Plan</div>
         <div class="plan__description">Listen without limits at a bargain price</div>
         <div class="plan__buttons">
-            <button class="plan__buttons_6m">6 months</button>
-            <button class="plan__buttons_12m">12 months</button>
+            <div class="plan__buttons_wrapper"><button class="plan__buttons_6m button-n">6 months</button></div>
+            <div class="plan__buttons_wrapper"><button class="plan__buttons_12m button-n">12 months</button></div>
         </div>
         <div class="plan__options">
             <div class="plan__options_card">
@@ -114,7 +170,7 @@
     </div>
 
     <div class="FAQ">
-        <div class="FAQ__title">FAQ</div>
+        <div class="FAQ__title caption">FAQ</div>
         <div class="FAQ__container">
             <div class="FAQ__container_tab">
                 <input id="FAQ__container_tab-one" type="checkbox" name="tabs">
@@ -159,6 +215,57 @@
         </div>
     </div>
 
-    <footer></footer>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__logo">
+                <div class="footer__logo_container">
+                    <img src="images/logoF.png" alt="logo" width="60px" height="60px" title="logo">
+                    <div class="footer__logo_container_text">DiscountsOnServices</div>
+                </div>
+                <div class="footer__logo_description">It's simple, fast and economical</div>
+            </div>
+            
+            <div class="footer__wrapper"> 
+            <div class="footer__subscriptions">
+                <div class="footer__subscriptions_title">Subscriptions</div>   
+                <div class="footer__subscriptions_list">
+                    <a class="footer__subscriptions_list" href="./DOS_Netflix.html">Netflix</a>
+                    <a class="footer__subscriptions_list" href="./DOS_YouTube.html">YouTube Premium</a>
+                    <a class="footer__subscriptions_list" href="./DOS_Spotify.html">Spotify</a>
+                </div>
+            </div>
+    
+            <div class="footer__navigation">
+                <div class="footer__navigation_title">Site navigation</div>   
+                <div class="footer__navigation_list">
+                    <a class="footer__navigation_list" href="#About-us">About</a>
+                    <a class="footer__navigation_list" href="./DOS_FAQ.html">FAQ</a>
+                    <a class="footer__navigation_list" href="#FAQ">Support</a>
+                </div>
+            </div>
+            </div>
+    
+            <div class="footer__contacts">
+                <div class="footer__contacts_social">
+                    <a class="footer__contacts_social-link" href="https://www.whatsapp.com/?lang=ru" target="_blank">
+                        <img src="images/whats_app_logoF.png" width="20px" height="20px" alt="whatsapp_logo" title="whatsapp_logo">
+                    </a>
+                    <a class="footer__contacts_social-link" href="https://web.telegram.org/k/" target="_blank">
+                        <img src="images/telegram_logoF.png" width="20px" height="20px" alt="telegram_logo" title="telegram_logo">
+                    </a>
+                </div>
+                <div class="footer__contacts_languages">
+                    <a class="footer__contacts_languages-link" href="">EN</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__last-line">
+            <div class="footer__last-line_privacy-policy">
+                <a class="footer__last-line_privacy-policy" href="privacy-policy.html">Privacy Policy</a>
+            </div>
+            <div class="footer__last-line_copyright">Copyright 2022 © All Rights Reserved</div>
+            <div class="footer__last-line_developer">Developed by Aleksey Budzko</div>
+        </div>
+    </footer>
 </body>
 </html>
