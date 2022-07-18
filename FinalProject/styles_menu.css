@@ -1,32 +1,5 @@
-@font-face {
-    font-family: 'Gotham Pro Regular';
-    src: url('./Fonts/GothamPro.eot');
-    src: url('./Fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-    url('./Fonts/GothamPro.woff') format('woff'),
-    url('./Fonts/GothamPro.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro Bold';
-    src: url('GothamPro-Bold.eot');
-    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('GothamPro-Bold.woff') format('woff'),
-    url('GothamPro-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    font-family: 'Gotham Pro Regular';
-    color:#333333;
-    text-decoration: none;
-}
-
-body {
-    background-color: #ECF3FB;
-}
+@import url("./styles_background.css");
+@import url("./styles_fonts.css");
 
 .header {
     position: absolute;
@@ -121,6 +94,10 @@ body {
 
 .menu__container_wrapper_chapter_icon {
     margin: 2vw 0 2vw 5vw;
+}
+
+.menu__container_wrapper_chapter_icon img:hover {
+filter: invert(22%) sepia(50%) saturate(3398%) hue-rotate(210deg) brightness(92%) contrast(93%);
 }
 
 .menu__container_wrapper_chapter_title a{

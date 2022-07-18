@@ -1,0 +1,122 @@
+
+.subscription__container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2vh;
+    position: relative;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    /* height: 58vh; */
+    border-radius: 32px;
+}
+
+.subscription__title {
+    margin-top: 15vh;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 140%;
+    color: #171717;
+}
+
+.subscription__text {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+    width: 85vw;
+    border-radius: 32px;
+}
+
+.subscription__text_wrapper {
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscription__text_wrapper_title {
+    font-weight: 700;
+    font-size: 5.5vw;
+    line-height: 140%;
+    color: #171717;
+}
+
+.subscription__text_wrapper_descriptions {
+    font-weight: 400;
+    font-size: 4vw;
+    line-height: 150%;
+    color: #333333;
+    margin-top: 1.5em;
+}
+
+.subscription__text_wrapper_button {
+    height: 15%;
+    margin-top: 7vh;
+} 
+
+.subscription__text_wrapper_button_lm {
+    width: 70vw;
+    height: 8vh;
+    padding: 0;
+    border-radius: 16px;
+    border-style: none;
+    background-color: #1749B3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 4vw;
+    line-height: 130%;
+    cursor: pointer;
+}
+
+
+.subscription__picture {
+    border-radius: 32px;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    min-height: 40vh;
+}
+
+.before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.subscription__picture img {
+    display: inline-block;
+    vertical-align: middle;
+    /* border-radius: 32px; */
+}
+
+#netflix {
+    background-color: #000000;
+}
+
+#netflix-picture {
+    width: 20vw;
+}
+
+#spotify {
+    background-color: #18d860;
+    
+}
+
+#spotify-picture {
+    width: 45vw;
+}
+
+#youtube {
+    background-color: #E1DCEB;
+}
+
+#youtube_picture {
+    width: 45vw;
+}

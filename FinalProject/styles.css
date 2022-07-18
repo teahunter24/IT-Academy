@@ -1,3 +1,5 @@
+@import url("./styles_background.css");
+@import url("./styles_fonts.css");
 @import url("./styles_header.css");
 @import url("./styles_start-using.css");
 @import url("./styles_subscription.css");
@@ -6,37 +8,6 @@
 @import url("./styles_FAQ.css");
 @import url("./styles_request.css");
 @import url("./styles_footer.css");
-
-
-@font-face {
-    font-family: 'Gotham Pro Regular';
-    src: url('./Fonts/GothamPro.eot');
-    src: url('./Fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-    url('./Fonts/GothamPro.woff') format('woff'),
-    url('./Fonts/GothamPro.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro Bold';
-    src: url('GothamPro-Bold.eot');
-    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('GothamPro-Bold.woff') format('woff'),
-    url('GothamPro-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-* {
-    font-family: 'Gotham Pro Regular';
-    color:#333333;
-    text-decoration: none;
-}
-
-body {
-    background-color: #ECF3FB;
-}
 
 .caption {
     margin-top: 15vh;
