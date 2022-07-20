@@ -65,7 +65,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    cursor: progress;
+    cursor: url(./images/paw-cursor.png);
 }
 
 .start-using__picture{

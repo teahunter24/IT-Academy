@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal window</title>
+    <style>
+        .forma-vkhoda {
+        background: #185c7d;
+        color: #f9f5f5;
+        display: inline-block;
+        font-size: 24px;
+        padding: 10px 18px;
+        text-decoration: none;
+        text-align: center;
+        min-width: 75px;
+        position: relative;
+        transition: color .1s ease;
+        border-radius: 50px;
+        }
+        .forma-vkhoda:hover {
+        background: #c72339;
+        }
+        .forma-vkhoda.forma-vkhoda-big {
+        font-size: 18px;
+        padding: 15px 20px;
+        min-width: 100px;
+        }
+        .forma-vkhoda-close {
+        color: #e41434;
+        font-size: 35px;
+        text-decoration: none;
+        padding:10px;
+        position: absolute;
+        right: 7px;
+        top: 0;
+        }
+        .forma-vkhoda-close:hover {
+        color: #292828;
+        }
+        .povekunos:before {
+        content: "";
+        display: none;
+        background: rgba(19, 17, 18, 0.58);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        }
+        .discovered:before {
+        display: block;
+        }
+        .discovered .povekunos-undes {
+        transform: translate(0, 0);
+        top: 20%;
+        }
+        .povekunos-undes {
+        background: #fefefe;
+        border: #292828 solid 0px;
+        border-radius: 5px;
+        margin-left: -198px;
+        text-align:center;
+        position: fixed;
+        left: 50%;
+        top: -100%;
+        z-index: 11;
+        width: 464px;
+        box-shadow:0 5px 10px rgba(0,0,0,0.3);
+        transform: translate(0, -500%);
+        transition: transform 0.3s ease-out;
+        }
+        .povekunos-body {
+        padding: 18px;
+        }
+        .povekunos-body input {
+        width: 215px;
+        padding: 10px;
+        border: 1px solid #b1afaf;
+        color: #524c4c;
+        outline: 0;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 8px;
+        border-radius: 5px;
+        }
+        .povekunos-header,
+        .povekunos-footer {
+        padding: 10px 20px;
+        }
+        .povekunos-header {
+        border-bottom: #e4dddd solid 1px;
+        }
+        .povekunos-header h2 {
+        font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p><a href="#" class="forma-vkhoda btn-big kundastemen">Вызвать модальное окно</a></p>
+
+    <div class="povekunos" aria-hidden="true">
+        <div class="povekunos-undes">
+                <div class="povekunos-header">
+                    <h2>Войдите в свой аккаунт</h2>
+                    <a href="#" class="forma-vkhoda-close closepovekunos" aria-hidden="true">×</a>
+                </div>
+            <div class="povekunos-body">
+                <input type="text" name="user" placeholder="Имя пользователя" size="20" /><br>
+                <input type="text" name="pass" placeholder="Пароль" size="20" />
+            </div>
+            <div class="povekunos-footer">
+                <a href="#" class="forma-vkhoda">Авторизоваться</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $('.kundastemen').click(function (e) {
+            e.preventDefault();
+        $('.povekunos').addClass('discovered');
+        });
+        $('.closepovekunos').click(function (e) {
+            e.preventDefault();
+        $('.povekunos').removeClass('discovered');
+        });
+    </script>
+</body>
+</html>
