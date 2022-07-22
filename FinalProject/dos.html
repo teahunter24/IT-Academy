@@ -60,53 +60,59 @@
                 </div>
             </div>
         </div>
+
         <div class="header__button">
-
             <button class="header__button-login forma-vkhoda btn-big kundastemen">Log in</button>
-
-            <!-- <p><a href="#" class="forma-vkhoda btn-big kundastemen">Вызвать модальное окно</a></p> -->
-
-            <div class="povekunos" aria-hidden="true">
-                <div class="povekunos-undes">
-                        <div class="povekunos-header">
-                            <h3>Log in</h3>
-                            <h6>New user? <a href="" id="link">Create an account</a></h6>
-                            <div class="forma-vkhoda-close closepovekunos">
-                                <img src="./images/close_icon.png" alt="close_icon">
-                            </div>
-                            <!-- <a href="#" class="forma-vkhoda-close closepovekunos" aria-hidden="true">×</a> -->
+            <div class="header__button_window povekunos" aria-hidden="true">
+                <div class="header__button_window_open povekunos-undes">
+                    <div class="header__button_window_open_header povekunos-header">
+                        <h3>Log in</h3>
+                        <h6>New user? <a href="" id="link">Create an account</a></h6>
+                        <div class="header__button_window_open_header_close-icon forma-vkhoda-close closepovekunos">
+                            <img src="./images/close_icon.png" alt="close_icon">
                         </div>
-                    <div class="povekunos-body">
+                    </div>
+                    <div class="header__button_window_open_body povekunos-body">
                         <h6>Email Address</h6>
                         <input type="text" name="user" placeholder="Enter your e-mail" size="20" /><br>
                         <h6>Password</h6>
-                        <input type="text" name="pass" placeholder="Password" size="20" />
+                        <input type="password" name="pass" placeholder="Password" size="20" />
                     </div>
-                    <div class="povekunos-login">
-                        <div class="povekunos-login__forgot">
+                    <div class="header__button_window_open_log-in povekunos-login">
+                        <div class="header__button_window_log-in_forgot povekunos-login__forgot">
                             <a href="">Forgot password?</a>
                         </div>
-                        <div class="povekunos-login__button">
-                            <button href="#" class="autorize-button start-using__text_button_su start-using__text_button">Log in</button>
+                        <div class="header__button_window_open_log-in_button povekunos-login__button">
+                            <button href="#" class="header__button_window_open_autorize-button">Log in</button>
                         </div>
                     </div>
-                    <h6>Or sign in with</h6>
-                    <div class="autorize-services">
-                        
-                        <div class="autorize-services__card">
-                            <img src="./images/google_icon.svg" alt="google_icon">
+                    <div class="header__button_window_open_autorize-services">
+                        <div class="header__button_window_open_autorize-services__sign-in">
+                            <div class="header__button_window_open_autorize-services__sign-in_hr"><hr></div>
+                            <div class="header__button_window_open_autorize-services__sign-in_text"><h6>Or sign in with</h6></div>
+                            <div class="header__button_window_open_autorize-services__sign-in_hr"><hr></div>
                         </div>
-                        <div class="autorize-services__card">
-                            <img src="./images/facebook_icon.svg" alt="facebook_icon">
-                        </div>
-                        <div class="autorize-services__card">
-                            <img src="./images/apple_icon.svg" alt="apple_icon">
+                        <div class="header__button_window_open_autorize-services__wrapper">
+                            <div class="header__button_window_open_autorize-services__card">
+                                <a class="header__button_window_open_autorize-services__card_link" target="_blank" href="https://www.google.com/">
+                                    <img src="./images/google_icon.svg" alt="google_icon">
+                                </a>
+                            </div>
+                            <div class="header__button_window_open_autorize-services__card">
+                                <a class="header__button_window_open_autorize-services__card_link" target="_blank" href="https://www.facebook.com/">
+                                    <img src="./images/facebook_icon.svg" alt="facebook_icon">
+                                </a>
+                            </div>
+                            <div class="header__button_window_open_autorize-services__card">
+                                <a class="header__button_window_open_autorize-services__card_link" target="_blank" href="https://www.apple.com/">
+                                    <img src="./images/apple_icon.svg" alt="apple_icon">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="privacy-policy-line">Protected by reCAPTCHA and subject to the Google  <a href="./privacy-policy.html" id="link">Privacy Policy </a>and <b>Terms of Service.</b></div>
+                    <div class="header__button_window_open_privacy-policy-line">Protected by reCAPTCHA and subject to the Google  <a href="./privacy-policy.html" id="link">Privacy Policy </a>and <b>Terms of Service.</b></div>
                 </div>
             </div>
-
         </div>
 
         <a class="header__menu-icon" href="DOS_Menu.html">
@@ -366,15 +372,6 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script>
-        $('.kundastemen').click(function (e) {
-            e.preventDefault();
-        $('.povekunos').addClass('discovered');
-        });
-        $('.closepovekunos').click(function (e) {
-            e.preventDefault();
-        $('.povekunos').removeClass('discovered');
-        });
-    </script>
+    <script src="./log-in.js"></script>
 </body>
 </html>
