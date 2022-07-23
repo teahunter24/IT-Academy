@@ -102,8 +102,13 @@
     align-items: center;
 }
 
-.header__button_window_open_autorize-services__sign-in div{
-    width: 32%;
+.header__button_window_open_autorize-services__sign-in_hr {
+    width: 35%;
+}
+
+.header__button_window_open_autorize-services__sign-in_text {
+    width: 25%;
+    margin: 0;
 }
 
 .header__button_window_open_autorize-services__sign-in_text h6 {

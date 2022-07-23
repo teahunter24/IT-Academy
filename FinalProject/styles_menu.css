@@ -23,11 +23,14 @@
 
 .header__logo img {
     width: 8vw;
+    max-width: 3em;
 }
 
 .header__menu-close {
     width: 8vw;
+    max-width: 3em;
     height: 8vw;
+    max-height: 3em;
     border-radius: 50%;
     margin-right: 6vw;
     background-color: #1749B3;

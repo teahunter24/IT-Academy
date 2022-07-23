@@ -136,6 +136,22 @@ footer {
     margin-right: 5vw;
 }
 
+#current-language {
+    background-color: #1749B3;
+    border-style: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 3.8vw;
+    line-height: 150%;
+}
+
+#current-language option {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 3.8vw;
+    line-height: 150%;
+}
+
 .footer__contacts_languages-link {
     color: #FFFFFF;
     font-weight: 600;

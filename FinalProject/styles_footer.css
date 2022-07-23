@@ -14,11 +14,11 @@ footer {
 }
 
 .footer__container {
-display: flex;
-flex-direction: row;
-text-align: center;
-justify-content: space-around;
-margin-bottom: 6vh;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-bottom: 6vh;
 }
 
 .footer__logo {
@@ -131,6 +131,22 @@ margin-bottom: 6vh;
 
 .footer__contacts_languages {
     margin-top: 4vh;
+}
+
+#current-language {
+    background-color: #1749B3;
+    border-style: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+
+#current-language option {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.5vw;
+    line-height: 150%;
 }
 
 .footer__contacts_languages-link {

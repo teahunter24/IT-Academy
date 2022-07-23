@@ -21,6 +21,7 @@
 
 .header__logo img {
     width: 8vw;
+    max-width: 3em;
 }
 
 .header__logo-text {

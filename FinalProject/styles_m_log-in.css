@@ -1,3 +1,4 @@
+@import url("./styles_mobile.css");
 
 .povekunos-undes {
     background: #FFFFFF;
@@ -95,8 +96,13 @@
     align-items: center;
 }
 
-.header__button_window_open_autorize-services__sign-in div{
-    width: 32%;
+.header__button_window_open_autorize-services__sign-in_hr {
+    width: 40%;
+}
+
+.header__button_window_open_autorize-services__sign-in_text {
+    width: 18%;
+    margin: 0;
 }
 
 .header__button_window_open_autorize-services__sign-in_text h6 {
@@ -122,11 +128,12 @@
     border-radius: 12px;
     width: 30%;
     height: 10vw;
+    max-height: 4em;
     cursor: pointer;
 }
 
 .header__button_window_open_autorize-services__card_link img {
-    width: 50%;
+    width: 60%;
 }
 
 .header__button_window_open_privacy-policy-line {

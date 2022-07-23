@@ -63,6 +63,10 @@
     cursor: pointer;
 }
 
+.subscription__text_wrapper_button_lm:hover {
+    background: #4065b5;
+}
+
 .subscription__picture {
     position: absolute;
     right: 0;
