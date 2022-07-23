@@ -10,10 +10,10 @@
 
 @font-face {
     font-family: 'Gotham Pro Bold';
-    src: url('GothamPro-Bold.eot');
-    src: url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('GothamPro-Bold.woff') format('woff'),
-    url('GothamPro-Bold.ttf') format('truetype');
+    src: url('./Fonts/GothamPro-Bold.eot');
+    src: url('./Fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./Fonts/GothamPro-Bold.woff') format('woff'),
+    url('./Fonts/GothamPro-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
