@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANKETA</title>
+    <script>
+
+        let promptSurname = prompt('Введите Вашу фамилию?!');
+        while (promptSurname.length < 2) {
+            promptSurname = prompt('Введите Вашу фамилию?!');
+        }
+        console.log('Фамилия: ', promptSurname);
+
+
+        let promptName = prompt('Введите Ваше имя?!');
+        while (promptName.length < 2) {
+            promptName = prompt('Введите Ваше имя?!');
+        }
+        console.log('Имя: ', promptName);
+
+        let promptPatronymic = prompt('Введите Ваше отчество?!');
+        while (promptPatronymic.length < 2) {
+            promptPatronymic = prompt('Введите Ваше отчество?!');
+        }
+        console.log('Отчество: ', promptPatronymic);
+
+
+
+        let promptAge = prompt('Введите Ваш возраст?!');
+        let promptAgeNumber = parseInt(promptAge);
+        while (promptAgeNumber < 18) {
+            promptAge = prompt('Введите Ваш возраст?!');
+            promptAgeNumber = parseInt(promptAge);
+        }
+        while (promptAgeNumber > 120) {
+            promptAge = prompt('Введите Ваш возраст?!');
+            promptAgeNumber = parseInt(promptAge);
+        }
+
+        console.log('Возраст в годах: ', promptAgeNumber * 365);
+        console.log('Через 5 лет Вам будет: ', promptAgeNumber + 5);
+        
+
+
+        const confirmGender = confirm('Ваш пол - мужской?');
+
+        let gender =  '';
+        confirmGender == true ? gender = 'Пол: мужской' : gender = 'Пол: женский';
+
+        let pension = '';
+        promptAgeNumber > 58 ? pension = 'Вы на пенсии: да' : pension = 'Вы на пенсии: нет';
+
+        if (confirmGender == true && promptAgeNumber > 63) {
+            console.log('Пол: мужской');
+            console.log('Вы на пенсии: да');
+            gender = 'Пол: мужской';
+            pension = 'Вы на пенсии: да';
+        } else if (confirmGender == false && promptAgeNumber > 58) {
+            console.log('Пол: женский');
+            console.log('Вы на пенсии: да');
+            gender = 'Пол: женский';
+            pension = 'Вы на пенсии: да';
+        } else if (confirmGender == true && promptAgeNumber < 63) {
+            console.log('Пол: мужской');
+            console.log('Вы на пенсии: нет');
+            gender = 'Пол: мужской';
+            pension = 'Вы на пенсии: нет';
+        } else {
+            console.log('Пол: женский');
+            console.log('Вы на пенсии: нет');
+            gender = 'Пол: женский';
+            pension = 'Вы на пенсии: нет';
+        }
+
+        alert(`Ваше ФИО: ${promptSurname} ${promptName} ${promptPatronymic} \n Ваш возраст в годах: ${promptAgeNumber} \n Ваш возраст в днях: ${promptAgeNumber * 365} \n Через 5 лет Вам будет: ${promptAgeNumber + 5} \n ${gender} \n ${pension}`);
+
+    </script>
+</head>
+
+<body>
+    <p>ANKETA</p>
+</body>
+</html>
