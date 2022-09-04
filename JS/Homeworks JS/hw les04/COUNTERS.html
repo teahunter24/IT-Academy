@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTERS</title>
+    <script>
+
+        // Increment (счетчик на увеличение)
+        console.log('');
+        console.log('Increment - cчетчик на увеличение:');
+
+
+        function generateIncreasingCounter(n) {
+            let currentCountI = n;
+            return function(num) {
+                if(num) {return currentCountI += num} else {return ++currentCountI} 
+            }
+        }
+
+        const increase = generateIncreasingCounter(100);
+        console.log(increase()); // 101
+        console.log(increase()); // 102
+        console.log(increase(5)); // 107
+        console.log(increase(10)); // 117
+
+
+
+        // Decrement (счетчик на уменьшение)
+        console.log('');
+        console.log('Decrement - cчетчик на уменьшение:');
+
+
+        function generateDecreasingCounter(n) {
+            let currentCountD = n;
+            return function(num) {
+                if(num) {return currentCountD -= num} else {return --currentCountD} 
+            }
+        }
+
+        const decrease = generateDecreasingCounter(100);
+        console.log(decrease()); // 99
+        console.log(decrease()); // 98
+        console.log(decrease(5)); // 93
+        console.log(decrease(10)); // 83
+
+    </script>
+</head>
+
+<body>
+    COUNTERS
+</body>
+</html>

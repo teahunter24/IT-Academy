@@ -194,7 +194,7 @@ function example3() {
         return inner;
     }
 
-    //функцию можно сохранять в переменную (function declaration)
+    //функцию можно сохранять в переменную (function expression)
     const gen1000 = generation(1000);
     gen1000(1); // inner 1001
     gen1000(2); // inner 1002
