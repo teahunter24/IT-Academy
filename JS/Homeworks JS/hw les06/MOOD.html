@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD</title>
+    <script>
+
+        // возвращает случайное число от 0 до N-1
+        function randomInt(n) {
+            return Math.trunc(n * Math.random())
+        }
+        
+        // MOOD - вернуть k цветов радуги
+        // const colors = [ 'красный', 'оранжевый', 'жёлтый', 'зелёный', 'голубой', 'синий', 'фиолетовый' ];
+
+        const hashColors = {
+            red: "красный",
+            orange: "оранжевый",
+            yellow: "жёлтый",
+            green: "зелёный",
+            blue: "голубой",
+            navy: "синий",
+            violet: "фиолетовый"
+        };
+
+        // console.log(hashColors.green);
+
+        // console.log(hashColors);
+
+        // colors.forEach(element => {
+        //         return console.log(element);
+        // });
+
+        // for (let element in hashColors) {
+        //     console.log(element);
+        // }
+
+        function mood(numberOfColors) {
+            const result = [];
+            const listOfColors = [];
+
+            for (let element in hashColors) {
+                listOfColors.push(element)
+            }
+            // console.log('colorsIndex - ', colorsIndex);
+            
+
+            
+            for (let element in hashColors) {
+                if (result.length == numberOfColors) break;
+                // console.log('hashColors[element] - ', hashColors[element]);
+                // console.log('element - ', element);
+                const colorIndex = randomInt(listOfColors.length);
+                const targetColor = listOfColors[colorIndex];
+                // console.log('targetColor: ', targetColor);
+
+                if (result.includes(hashColors[targetColor])) {
+                    const colorIndex = randomInt(listOfColors.length);
+                    const targetColor = listOfColors[colorIndex];
+                } else {
+                // console.log('targetColor - ', targetColor);
+                result.push(hashColors[targetColor]);
+                }
+            }
+            // for (let index = 0; index < numberOfColors; index += 1) {
+            //     const colorIndex = randomInt(colors.length);
+            //     const targetColor = colors[colorIndex];
+            //     result.push(targetColor);
+            // }
+            return result;
+        };
+
+        console.log('mood(1) - ', mood(1));
+        console.log('mood(2) - ', mood(2));
+        console.log('mood(3) - ', mood(3));
+        console.log('mood(4) - ', mood(4));
+        console.log('mood(5) - ', mood(5));
+        console.log('mood(6) - ', mood(6));
+        console.log('mood(7) - ', mood(7));
+
+        // for (let element in hashColors) {
+            //     if (result.length == numberOfColors) break;
+
+            //     const colorIndex = randomInt(colors.length);
+            //     const targetColor = colors[colorIndex];
+
+            //     if (result.includes(targetColor)) {
+            //         const colorIndex = randomInt(colors.length);
+            //         const targetColor = colors[colorIndex];
+            //     } else {
+            //     result.push(targetColor);
+            //     }
+            // }
+    </script>
+</head>
+
+<body>
+    MOOD
+</body>
+</html>
