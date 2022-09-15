@@ -46,59 +46,24 @@
         console.log(decrease(10)); // 83
 
 
-
-
-        // 100score
-        // function generalCounter(type, k) {
-        //     if (type == 'increase') {
-        //         return increase
-        //     } else if (type == decrease) {
-        //         return decrease}
-        // }
-
-        // generalCounter(increse, 100);
-
-        function test(word) {
+        // Задание на 100 баллов
+        console.log('');
+        console.log('Общая функция с двумя аргументами:');
+        function generalCounter(word, n) {
             if (word == 'increase') {
-                return console.log('INCREASE')
+                const increase = generateIncreasingCounter(100);
+                return increase(n);
             } else if (word == 'decrease') {
-                return console.log('DECREASE')
+                const decrease = generateDecreasingCounter(100);
+                return decrease(n);
             }
         }
 
-        test('increase');
-        test('decrease');
-
-        // function sum(a,b) {
-        //     console.log(a+b);
-        // }
-
-        // sum(10,200);
-
-        function generalCounter(word) {
-            if (word == 'increase') {
-                return console.log(increase(40));
-            } else if (word == 'decrease') {
-                return console.log(decrease(40));
-            }
-        }
-
-        generalCounter('increase');
-        generalCounter('decrease');
-
-        // console.log(decrease(40));
-
-        // console.log('');
-
-        // function zero() {
-        //     let mummy = 15;
-        //     console.log(mummy);
-        // }
-
-        // zero();
-        // console.log(mummy);
+        console.log(generalCounter('increase', 0));
+        console.log(generalCounter('decrease', 25));
 
     </script>
+
 </head>
 
 <body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOOD</title>
+    <script>
+        const hashColors = {
+            red: "красный",
+            orange: "оранжевый",
+            yellow: "жёлтый",
+            green: "зелёный",
+            blue: "голубой",
+            navy: "синий",
+            violet: "фиолетовый"
+        };
+
+        function mood(numberOfColors) {
+            const arr = Object.entries(hashColors);
+            // console.log(arr);
+            const result = [];
+
+            function randomInt(n) {
+                const randomNumber =  Math.trunc(n * Math.random());
+                if (result.includes(arr[randomNumber][1])) {
+                    return randomInt(arr.length);
+                } else {
+                    return arr[randomNumber][1];
+                }
+            }
+
+            for (let i=0; i < numberOfColors; i++) {
+                let randomElement = randomInt(arr.length);
+                result.push(randomElement);
+            }
+
+            return result;        
+        }
+
+        console.log('mood(1) - ', mood(1));
+        console.log('mood(2) - ', mood(2));
+        console.log('mood(3) - ', mood(3));
+        console.log('mood(4) - ', mood(4));
+        console.log('mood(5) - ', mood(5));
+        console.log('mood(6) - ', mood(6));
+        console.log('mood(7) - ', mood(7));
+
+    </script>
+</head>
+
+<body>
+    MOOD
+</body>
+</html>
