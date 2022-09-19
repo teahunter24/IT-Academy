@@ -6,19 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TREESUM</title>
     <script>
+
+        // OPTION 1
         
-        let ARRAY = [ 5, 7,[ 4, [2], 8, [1,3], 2 ],[ 9, [] ], 1, 8];
+        // function arraySum(array){
+        //     let ArrayFlat = array.flat(Infinity);
+        //     let sum = 0;
+        //     for (let i = 0; i < ArrayFlat.length; i++) {
+        //         sum += ArrayFlat[i];
+        //     }
+        //     console.log(sum);
+        // }
         
-        function arraySum(array){
-            let ArrayFlat = array.flat(Infinity);
-            let sum = 0;
-            for (let i = 0; i < ArrayFlat.length; i++) {
-                sum += ArrayFlat[i];
-            }
-            console.log(sum);
+        // arraySum(ARRAY);
+
+
+
+
+        // OPTION 2.1
+
+        // let arr = [ 5, 7,[ 4, [2], 8, [1,3], 2 ],[ 9, [] ], 1, 8];
+
+        // function summ(arr, sum) {
+        //     sum = sum || 0
+        //     if (arr.length) {
+        //         return summ(arr, sum + arr.pop())
+        //     } else {
+        //         return sum
+        //     }
+        //     console.log(sum);
+        // }
+
+
+        // OPTION 2.2
+
+        // function summ(arr, sum = 0, index = 0) { 
+        //     if (arr[index]) { 
+        //         return summ(arr, sum + arr[index], ++index) 
+        //     } else { 
+        //         return sum 
+        //     } 
+        //     console.log(sum);
+        // }
+
+        // summ(arr);
+
+
+
+        // OPTION 3
+        
+        // let ARRAY = [ 5, 7,[ 4, [2], 8, [1,3], 2 ],[ 9, [] ], 1, 8];
+
+        // function sum(arr, res = 0) {
+        //     for (let i = 0; i < arr.length; i += 1) {
+        //         const item = arr[i]
+        //         if (Array.isArray(item)) {
+        //             res += sum(item)
+        //         } else {
+        //             res += item
+        //         }
+        //     }
+        //     return console.log(res)
+        // }
+
+        // sum(ARRAY);
+
+
+
+
+        // OPTION 4
+
+        let testArray = [ 5, 7,[ 4, [2], 8, [1,3], 2 ],[ 9, [] ], 1, 8];
+
+        function treesum(arr, res = 0) { 
+            for (let i = 0; i < arr.length; i += 1) { 
+                const elem = arr[i]; 
+                if (Array.isArray(elem)) { 
+                    res += treesum(elem) 
+                } else { 
+                    res += elem; 
+                } 
+            } return res; 
         }
-        
-        arraySum(ARRAY);
+
+        console.log(treesum(testArray));
 
     </script>
 </head>
